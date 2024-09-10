@@ -124,12 +124,6 @@ const projectList = [
       },
       {
         id: 3,
-        name: "TERMINAL",
-        url: "./images/terminal.svg",
-        darkurl: "./images/terminal-darkmode.svg",
-      },
-      {
-        id: 4,
         name: "FRAMER",
         url: "./images/framer.svg",
       },
@@ -161,12 +155,6 @@ const projectList = [
       },
       {
         id: 3,
-        name: "TERMINAL",
-        url: "./images/terminal.svg",
-        darkurl: "./images/terminal-darkmode.svg",
-      },
-      {
-        id: 4,
         name: "FRAMER",
         url: "./images/framer.svg",
       },
@@ -202,11 +190,6 @@ const projectList = [
         url: "./images/terminal.svg",
         darkurl: "./images/terminal-darkmode.svg",
       },
-      {
-        id: 4,
-        name: "FRAMER",
-        url: "./images/framer.svg",
-      },
     ],
   },
 
@@ -236,8 +219,8 @@ const projectList = [
       },
       {
         id: 3,
-        name: "JAVASCRIPT",
-        url: "./images/javascript.svg",
+        name: "CSS",
+        url: "./images/css.svg",
       },
     ],
   },
@@ -265,12 +248,6 @@ const projectList = [
         name: "CSS",
         url: "./images/css.svg",
       },
-      {
-        id: 3,
-        name: "TERMINAL",
-        url: "./images/terminal.svg",
-        darkurl: "./images/terminal-darkmode.svg",
-      },
     ],
   },
 
@@ -294,15 +271,14 @@ const projectList = [
       },
       {
         id: 2,
-        name: "RESTFUL APIs",
-        url: "./images/api.svg",
-        darkurl: "./images/api-darkmode.svg",
+        name: "CSS",
+        url: "./images/css.svg",
       },
       {
         id: 3,
-        name: "TERMINAL",
-        url: "./images/terminal.svg",
-        darkurl: "./images/terminal-darkmode.svg",
+        name: "RESTFUL APIs",
+        url: "./images/api.svg",
+        darkurl: "./images/api-darkmode.svg",
       },
     ],
   },
@@ -340,7 +316,7 @@ const projectList = [
 
   {
     id: 11,
-    name: "Multi-step form site",
+    name: "Multi-step form",
     link: "https://emmathevibe.github.io/multi-step-form/",
     // image: "./images/multi-step-form.PNG",
     pc: "./Mockups/multistep-pc.png",
