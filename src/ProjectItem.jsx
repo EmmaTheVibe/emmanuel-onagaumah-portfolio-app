@@ -1,7 +1,37 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-export default function ProjectItem({ project, theme }) {
+export default function ProjectItem({ project, theme, mb }) {
+  const tabVariants = {
+    initial: {
+      opacity: 0,
+      y: mb ? 100 : 150,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.3,
+        delay: 0.5,
+      },
+    },
+  };
+
+  const mobileVariants = {
+    initial: {
+      opacity: 0,
+      y: mb ? 100 : 150,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.3,
+        delay: 0.6,
+      },
+    },
+  };
+
   const divRef = useRef(null);
   const isInView = useInView(divRef, { threshold: 0.5, once: true });
 
@@ -15,7 +45,25 @@ export default function ProjectItem({ project, theme }) {
     >
       <div className="screen">
         <div className="project-pic">
-          <img src={project.image} alt="" />
+          <img src={project.pc} alt="" className="pc" />
+          <motion.img
+            variants={tabVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            src={project.tab}
+            alt=""
+            className="tab"
+          />
+          <motion.img
+            variants={mobileVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            src={project.mobile}
+            alt=""
+            className="mobile"
+          />
         </div>
       </div>
 

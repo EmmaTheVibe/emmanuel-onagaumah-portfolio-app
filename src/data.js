@@ -1,18 +1,21 @@
 const projectList = [
   {
-    id: 1,
-    name: "Loopstudios landing page",
-    link: "https://emmathevibe.github.io/interactive-rating-component-main/",
-    image: "./Mockups/loopstudios-mockup.png",
+    id: 5,
+    name: "Parkway wallet site",
+    link: "https://wallet.parkway.ng/",
+    // image: "./images/parkway-wallet-snip.PNG",
+    pc: "./Mockups/parkway-pc.png",
+    mobile: "./Mockups/parkway-mobile.png",
+    tab: "./Mockups/parkway-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
+          sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
+          molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
+          natus error.`,
     technologies: [
       {
         id: 1,
-        name: "REACT",
-        url: "./images/react.svg",
+        name: "HTML",
+        url: "./images/html.svg",
       },
       {
         id: 2,
@@ -21,23 +24,21 @@ const projectList = [
       },
       {
         id: 3,
-        name: "TERMINAL",
-        url: "./images/terminal.svg",
-        darkurl: "./images/terminal-darkmode.svg",
+        name: "JAVASCRIPT",
+        url: "./images/javascript.svg",
       },
-      {
-        id: 4,
-        name: "FRAMER",
-        url: "./images/framer.svg",
-      },
+      { id: 4, name: "BOOTSTRAP", url: "./images/bootstrap.svg" },
     ],
   },
 
   {
     id: 2,
     name: "Room homepage",
-    link: "https://emmathevibe.github.io/interactive-rating-component-main/",
-    image: "./Mockups/room-mockup.png",
+    link: "https://room-homepage-teal.vercel.app/",
+    // image: "./Mockups/room-mockup.png",
+    pc: "./Mockups/room-pc.png",
+    mobile: "./Mockups/room-mobile.png",
+    tab: "./Mockups/room-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
               sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
               molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
@@ -58,11 +59,6 @@ const projectList = [
         name: "TERMINAL",
         url: "./images/terminal.svg",
         darkurl: "./images/terminal-darkmode.svg",
-      },
-      {
-        id: 4,
-        name: "FRAMER",
-        url: "./images/framer.svg",
       },
     ],
   },
@@ -72,7 +68,9 @@ const projectList = [
     name: "Banking site demo",
     link: "https://banking-app-eight-kappa.vercel.app/",
     // image: "./images/bank.PNG",
-    image: "./Mockups/bank-mockup.png",
+    pc: "./Mockups/bank-pc.png",
+    mobile: "./Mockups/bank-mobile.png",
+    tab: "./Mockups/bank-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
               sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
               molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
@@ -104,8 +102,11 @@ const projectList = [
   {
     id: 4,
     name: "Sunnyside landing page",
-    link: "https://emmathevibe.github.io/interactive-rating-component-main/",
-    image: "./Mockups/sunnyside-mockup.png",
+    link: "https://sunnyside-landing-page-olive.vercel.app/",
+    // image: "./Mockups/sunnyside-mockup.png",
+    pc: "./Mockups/sunnyside-pc.png",
+    mobile: "./Mockups/sunnyside-mobile.png",
+    tab: "./Mockups/sunnyside-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
               sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
               molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
@@ -136,47 +137,50 @@ const projectList = [
   },
 
   {
-    id: 5,
-    name: "Parkway wallet site",
-    link: "https://wallet.parkway.ng/",
-    // image: "./images/parkway-wallet-snip.PNG",
-    image: "./Mockups/parkway-mockup.png",
+    id: 1,
+    name: "Loopstudios landing page",
+    link: "https://loopstudios-landing-page-one-ruby.vercel.app/",
+    // image: "./Mockups/loopstudios-mockup.png",
+    pc: "./Mockups/loopstudios-pc.png",
+    mobile: "./Mockups/loopstudios-mobile.png",
+    tab: "./Mockups/loopstudios-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-          sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-          molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-          natus error.`,
+              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
+              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
+              natus error.`,
     technologies: [
       {
         id: 1,
-        name: "HTML",
-        url: "./images/html.svg",
+        name: "REACT",
+        url: "./images/react.svg",
       },
       {
         id: 2,
-        name: "CSS",
-        url: "./images/css.svg",
+        name: "SASS",
+        url: "./images/sass.svg",
       },
       {
         id: 3,
-        name: "JAVASCRIPT",
-        url: "./images/javascript.svg",
-      },
-      { id: 4, name: "BOOTSTRAP", url: "./images/bootstrap.svg" },
-      {
-        id: 5,
         name: "TERMINAL",
         url: "./images/terminal.svg",
         darkurl: "./images/terminal-darkmode.svg",
+      },
+      {
+        id: 4,
+        name: "FRAMER",
+        url: "./images/framer.svg",
       },
     ],
   },
 
   {
     id: 6,
-    name: "ECommerce product page",
+    name: "eCommerce product page",
     link: "https://ecommerce-product-page-puce-five.vercel.app/",
     // image: "./images/ecommerce-product-page.PNG",
-    image: "./Mockups/ecommerce-mockup.png",
+    pc: "./Mockups/ecommerce-pc.png",
+    mobile: "./Mockups/ecommerce-mobile.png",
+    tab: "./Mockups/ecommerce-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
               sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
               molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
@@ -211,7 +215,9 @@ const projectList = [
     name: " Product order page",
     link: "https://emmathevibe.github.io/product-list-main/",
     // image: "./images/product-list.PNG",
-    image: "./Mockups/product-list-mockup.png",
+    pc: "./Mockups/product-list-pc.png",
+    mobile: "./Mockups/product-list-mobile.png",
+    tab: "./Mockups/product-list-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
               sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
               molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
@@ -239,9 +245,11 @@ const projectList = [
   {
     id: 8,
     name: " Interactive card form",
-    link: "https://emmathevibe.github.io/product-list-main/",
+    link: "https://interactive-card-form-sepia.vercel.app/",
     // image: "./images/product-list.PNG",
-    image: "./Mockups/interactive-card-mockup.png",
+    pc: "./Mockups/interactive-card-pc.png",
+    mobile: "./Mockups/interactive-card-mobile.png",
+    tab: "./Mockups/interactive-card-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
               sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
               molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
@@ -254,14 +262,14 @@ const projectList = [
       },
       {
         id: 2,
-        name: "TERMINAL",
-        url: "./images/terminal.svg",
-        darkurl: "./images/terminal-darkmode.svg",
+        name: "CSS",
+        url: "./images/css.svg",
       },
       {
         id: 3,
-        name: "JAVASCRIPT",
-        url: "./images/javascript.svg",
+        name: "TERMINAL",
+        url: "./images/terminal.svg",
+        darkurl: "./images/terminal-darkmode.svg",
       },
     ],
   },
@@ -269,9 +277,11 @@ const projectList = [
   {
     id: 9,
     name: "Advice generator",
-    link: "https://quote-generator-peach.vercel.app/",
+    link: "https://advice-generator-app-ten-tawny.vercel.app/",
     // image: "./images/quote-generator.PNG",
-    image: "./Mockups/advice-mockup.png",
+    pc: "./Mockups/advice-pc.png",
+    mobile: "./Mockups/advice-mobile.png",
+    tab: "./Mockups/advice-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
               sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
               molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
@@ -302,7 +312,9 @@ const projectList = [
     name: "Age calculator",
     link: "https://emmathevibe.github.io/age-calculator-app-main/index.html",
     // image: "./images/age-calculator-app.PNG",
-    image: "./Mockups/age-mockup.png",
+    pc: "./Mockups/age-pc.png",
+    mobile: "./Mockups/age-mobile.png",
+    tab: "./Mockups/age-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
               sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
               molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
@@ -331,7 +343,9 @@ const projectList = [
     name: "Multi-step form site",
     link: "https://emmathevibe.github.io/multi-step-form/",
     // image: "./images/multi-step-form.PNG",
-    image: "./Mockups/multistep-mockup.png",
+    pc: "./Mockups/multistep-pc.png",
+    mobile: "./Mockups/multistep-mobile.png",
+    tab: "./Mockups/multistep-tab.png",
     details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
               sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
               molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,

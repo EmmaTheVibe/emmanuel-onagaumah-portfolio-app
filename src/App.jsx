@@ -6,9 +6,11 @@ import ProjectItem from "./ProjectItem";
 import Skills from "./Skills";
 import HomeContent from "./HomeContent";
 import { motion, useInView } from "framer-motion";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 export const ThemeContext = createContext(null);
 function App() {
+  const mb = useMediaQuery("(max-width: 920px)");
   const [projects, setProjects] = useState(projectList);
   const [showJumper, setShowJumper] = useState(true);
   const divRef = useRef(null);
@@ -17,7 +19,7 @@ function App() {
   const [theme, setTheme] = useState("light");
   setTimeout(() => {
     setShowJumper(false);
-  }, 4000);
+  }, 1700);
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
@@ -45,6 +47,7 @@ function App() {
                 <ProjectsList>
                   {projects.map((project) => (
                     <ProjectItem
+                      mb={mb}
                       theme={theme}
                       project={project}
                       className={
