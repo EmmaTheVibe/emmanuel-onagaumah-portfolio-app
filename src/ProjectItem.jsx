@@ -50,7 +50,6 @@ export default function ProjectItem({ project, theme, mb }) {
             variants={tabVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
             src={project.tab}
             alt=""
             className="tab"
@@ -59,7 +58,6 @@ export default function ProjectItem({ project, theme, mb }) {
             variants={mobileVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
             src={project.mobile}
             alt=""
             className="mobile"
