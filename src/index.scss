@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Unbounded:wght@200..900&display=swap");
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 $width: 60px;
 $height: 60px;
 $quantity: 15;
@@ -25,7 +29,7 @@ body {
 
 #light {
   color: #333;
-  background-color: #d6d6f4;
+  background-color: #cecef7;
 }
 
 // #dark #nav {
@@ -200,6 +204,7 @@ section {
   // color: #b4b4fa;
   position: relative;
 }
+
 .custom-shape-divider-bottom-1726045774 {
   position: absolute;
   bottom: -2px;
@@ -209,7 +214,6 @@ section {
   line-height: 0;
   transform: rotate(180deg);
 }
-
 .custom-shape-divider-bottom-1726045774 svg {
   position: relative;
   display: block;
@@ -217,30 +221,46 @@ section {
   height: 70px;
 }
 .custom-shape-divider-bottom-1726045774 .home-fill {
-  fill: #bcbcf7;
+  fill: #bbbbf8;
   transition: all 0.3s ease;
 }
 .custom-shape-divider-bottom-1726045774 .skills-fill {
-  fill: #a9a9fa;
+  fill: #adadf5;
   transition: all 0.3s ease;
 }
 
-#dark #home {
-  background-color: #4a1e4a;
+.custom-shape-divider-top-1726062737 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-top-1726062737 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 51px;
+}
+.custom-shape-divider-top-1726062737 .shape-fill {
+  fill: #ffffff;
 }
 
+#dark #home {
+  background-color: #411841;
+}
 #dark .home-fill {
-  fill: #3b133b;
+  fill: #350e35;
 }
 #dark .skills-section {
-  background-color: #3b133b;
+  background-color: #350e35;
 }
-
 #dark .skills-fill {
-  fill: #2c0b2c;
+  fill: #290829;
 }
 #dark #projects {
-  background-color: #2c0b2c;
+  background-color: #290829;
 }
 
 .section-title {
@@ -251,7 +271,7 @@ section {
 
 #home {
   min-height: 100vh;
-  background-color: #d6d6f4;
+  background-color: #cecef7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,7 +295,7 @@ section {
 }
 
 .skills-section {
-  background-color: #bcbcf7;
+  background-color: #bbbbf8;
   transition: background-color 0.3s ease;
 }
 .skills {
@@ -381,7 +401,7 @@ section {
   justify-content: center;
   align-items: center;
   padding: 50px 0 100px;
-  background-color: #a9a9fa;
+  background-color: #adadf5;
   transition: background-color 0.3s ease;
 }
 .blob {
