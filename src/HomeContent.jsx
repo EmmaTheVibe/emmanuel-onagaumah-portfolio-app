@@ -13,7 +13,7 @@ export default function HomeContent({ toggleDarkMode }) {
         animate={isInView ? { y: 0, opacity: 1 } : { y: 100, opacity: 0 }}
         transition={{ duration: 0.3 }}
         ref={divRef}
-        // onClick={toggleDarkMode}
+        onClick={toggleDarkMode}
       >
         <div className="avatar"></div>
         <div className="about">

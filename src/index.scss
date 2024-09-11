@@ -20,12 +20,12 @@ body {
 
 #dark {
   color: #fff;
-  background-color: #333;
+  background-color: #4a1e4a;
 }
 
 #light {
   color: #333;
-  background-color: #fff;
+  background-color: #d6d6f4;
 }
 
 // #dark #nav {
@@ -217,10 +217,30 @@ section {
   height: 70px;
 }
 .custom-shape-divider-bottom-1726045774 .home-fill {
-  fill: #d6f8ba;
+  fill: #bcbcf7;
+  transition: all 0.3s ease;
 }
 .custom-shape-divider-bottom-1726045774 .skills-fill {
-  fill: #b4b4fa;
+  fill: #a9a9fa;
+  transition: all 0.3s ease;
+}
+
+#dark #home {
+  background-color: #4a1e4a;
+}
+
+#dark .home-fill {
+  fill: #3b133b;
+}
+#dark .skills-section {
+  background-color: #3b133b;
+}
+
+#dark .skills-fill {
+  fill: #2c0b2c;
+}
+#dark #projects {
+  background-color: #2c0b2c;
 }
 
 .section-title {
@@ -231,11 +251,12 @@ section {
 
 #home {
   min-height: 100vh;
+  background-color: #d6d6f4;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 60px 0;
-  background-color: #eaddca;
+  transition: background-color 0.3s ease;
 }
 .home-content {
   display: flex;
@@ -254,7 +275,8 @@ section {
 }
 
 .skills-section {
-  background-color: #d6f8ba;
+  background-color: #bcbcf7;
+  transition: background-color 0.3s ease;
 }
 .skills {
   width: 100%;
@@ -359,7 +381,8 @@ section {
   justify-content: center;
   align-items: center;
   padding: 50px 0 100px;
-  background-color: #b4b4fa;
+  background-color: #a9a9fa;
+  transition: background-color 0.3s ease;
 }
 .blob {
   position: sticky;
