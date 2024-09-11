@@ -3,7 +3,7 @@ export default function Section({ className, bg, sectionId, children }) {
     <section
       className={className}
       id={sectionId}
-      // style={{ backgroundImage: `url(${bg})` }}
+      style={{ backgroundImage: `url(${bg})` }}
     >
       {children}
     </section>

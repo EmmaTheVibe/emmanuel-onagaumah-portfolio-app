@@ -193,7 +193,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-position: center;
+  background-position: scroll;
   // background-size: contain;
   // background-repeat: no-repeat;
   background-attachment: fixed;
@@ -470,6 +470,12 @@ section {
 }
 ul {
   list-style: none;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  section {
+    background-attachment: scroll;
+  }
 }
 
 @media screen and (max-width: 1600px) {
