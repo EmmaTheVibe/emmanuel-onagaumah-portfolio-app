@@ -472,12 +472,6 @@ ul {
   list-style: none;
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-  section {
-    background-attachment: scroll;
-  }
-}
-
 @media screen and (max-width: 1600px) {
   .container {
     width: 1280px;
