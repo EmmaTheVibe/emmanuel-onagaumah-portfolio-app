@@ -39,6 +39,14 @@ function App() {
             {/* <Navbar toggleDarkMode={toggleTheme} /> */}
             <Section className={"home-section"} sectionId={"home"}>
               <HomeContent toggleDarkMode={toggleTheme} />
+              <input
+                id="toggle"
+                className="toggle"
+                type="checkbox"
+                checked={theme === "light"}
+                onClick={toggleTheme}
+              />
+
               <OpacityVector classname={"home-fill"} />
             </Section>
             <Section className={"skills-section"}>
