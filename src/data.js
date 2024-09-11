@@ -435,4 +435,6 @@ const skillsList = [
   //   { id: 16, name: "RESPONSIVE DESIGNS", url: "./images/responsive.svg" },
 ];
 
-export { projectList, skillsList };
+const projectsBg = "./images/protruding-squares.svg";
+
+export { projectsBg, projectList, skillsList };

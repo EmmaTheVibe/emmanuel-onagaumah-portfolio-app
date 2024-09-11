@@ -1,6 +1,10 @@
-export default function Section({ className, sectionId, children }) {
+export default function Section({ className, bg, sectionId, children }) {
   return (
-    <section className={className} id={sectionId}>
+    <section
+      className={className}
+      id={sectionId}
+      style={{ backgroundImage: `url(${bg})` }}
+    >
       {children}
     </section>
   );
