@@ -7,10 +7,11 @@ import Skills from "./Skills";
 import HomeContent from "./HomeContent";
 import { motion, useInView } from "framer-motion";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import OpacityVector from "./OpacityVector";
 
 export const ThemeContext = createContext(null);
 function App() {
-  const mb = useMediaQuery("(max-width: 920px)");
+  const mb = useMediaQuery("(max-width: 980px)");
   const [projects, setProjects] = useState(projectList);
   const [showJumper, setShowJumper] = useState(true);
   const divRef = useRef(null);
@@ -37,33 +38,22 @@ function App() {
             {/* <Navbar toggleDarkMode={toggleTheme} /> */}
             <Section className={"home-section"} sectionId={"home"}>
               <HomeContent toggleDarkMode={toggleTheme} />
+              <OpacityVector classname={"home-fill"} />
             </Section>
-            <Section>
+            <Section className={"skills-section"}>
               <Skills theme={theme} />
+              <OpacityVector classname={"skills-fill"} />
             </Section>
             <Section className={"project-section"} sectionId={"projects"}>
               <div className="container">
                 <h2 className="section-title">Projects</h2>
                 <ProjectsList>
-                  {projects.map((project) => (
+                  {projects.map((project, index) => (
                     <ProjectItem
                       mb={mb}
                       theme={theme}
                       project={project}
-                      className={
-                        project.id % 2 === 0
-                          ? "fade-from-right"
-                          : project.id % 2 !== 0 &&
-                            project.id !== projects.length
-                          ? "fade-from-left"
-                          : project.id === projects.length &&
-                            project.id % 2 !== 0
-                          ? "fade-to-center"
-                          : ""
-                      }
-                      // className={
-                      //   project.id % 2 === 0 ? "fade-from-right" : "fade-from-left"
-                      // }
+                      direction={index % 2 !== 0 ? "reverse" : ""}
                       key={project.id}
                     />
                   ))}

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-export default function ProjectItem({ project, theme, mb }) {
+export default function ProjectItem({ project, theme, mb, direction }) {
   const tabVariants = {
     initial: {
       opacity: 0,
@@ -40,10 +40,10 @@ export default function ProjectItem({ project, theme, mb }) {
       initial={{ y: 100 }}
       animate={isInView ? { y: 0 } : { y: 100 }}
       transition={{ duration: 0.3 }}
-      className="project-item"
+      className={`project-item ${direction}`}
       ref={divRef}
     >
-      <div className="screen">
+      <div className={`screen ${direction}`}>
         <div className="project-pic">
           <img src={project.pc} alt="" className="pc" />
           <motion.img
@@ -68,7 +68,8 @@ export default function ProjectItem({ project, theme, mb }) {
       <div className="project-info">
         <h3 className="project-name">{project.name}</h3>
         <p className="project-details">{project.details}</p>
-        <div style={{ display: "flex" }} className="tech-list">
+        <p>Built with:</p>
+        <div className="tech-list">
           {project.technologies.map((tech) => (
             <img
               src={theme === "dark" && tech.darkurl ? tech.darkurl : tech.url}
