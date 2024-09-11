@@ -47,7 +47,8 @@ const projectList = [
       {
         id: 1,
         name: "REACT",
-        url: "./images/react.svg",
+        url: "./images/react-dark.svg",
+        darkurl: "./images/react.svg",
       },
       {
         id: 2,
@@ -79,7 +80,8 @@ const projectList = [
       {
         id: 1,
         name: "REACT",
-        url: "./images/react.svg",
+        url: "./images/react-dark.svg",
+        darkurl: "./images/react.svg",
       },
       {
         id: 2,
@@ -115,7 +117,8 @@ const projectList = [
       {
         id: 1,
         name: "REACT",
-        url: "./images/react.svg",
+        url: "./images/react-dark.svg",
+        darkurl: "./images/react.svg",
       },
       {
         id: 2,
@@ -146,7 +149,8 @@ const projectList = [
       {
         id: 1,
         name: "REACT",
-        url: "./images/react.svg",
+        url: "./images/react-dark.svg",
+        darkurl: "./images/react.svg",
       },
       {
         id: 2,
@@ -177,7 +181,8 @@ const projectList = [
       {
         id: 1,
         name: "REACT",
-        url: "./images/react.svg",
+        url: "./images/react-dark.svg",
+        darkurl: "./images/react.svg",
       },
       {
         id: 2,
@@ -209,7 +214,8 @@ const projectList = [
       {
         id: 1,
         name: "REACT",
-        url: "./images/react.svg",
+        url: "./images/react-dark.svg",
+        darkurl: "./images/react.svg",
       },
       {
         id: 2,
@@ -241,7 +247,8 @@ const projectList = [
       {
         id: 1,
         name: "REACT",
-        url: "./images/react.svg",
+        url: "./images/react-dark.svg",
+        darkurl: "./images/react.svg",
       },
       {
         id: 2,
@@ -267,7 +274,8 @@ const projectList = [
       {
         id: 1,
         name: "REACT",
-        url: "./images/react.svg",
+        url: "./images/react-dark.svg",
+        darkurl: "./images/react.svg",
       },
       {
         id: 2,
@@ -368,8 +376,8 @@ const skillsList = [
   {
     id: 4,
     name: "REACT",
-    url: "./images/react.svg",
-    // darkurl: "./images/react.svg",
+    url: "./images/react-dark.svg",
+    darkurl: "./images/react.svg",
   },
   {
     id: 5,
@@ -437,4 +445,10 @@ const skillsList = [
 
 const projectsBg = "./images/protruding-squares.svg";
 
-export { projectsBg, projectList, skillsList };
+const tools = {
+  spanner: "./images/spanner.svg",
+  gear: "./images/gear.svg",
+  star: "./images/star.svg",
+};
+
+export { projectsBg, projectList, skillsList, tools };

@@ -43,7 +43,7 @@ function App() {
                 id="toggle"
                 className="toggle"
                 type="checkbox"
-                checked={theme === "light"}
+                defaultChecked={theme === "light"}
                 onClick={toggleTheme}
               />
 

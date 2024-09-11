@@ -9,7 +9,6 @@ export default function Skills({ theme }) {
     amount: "all",
     once: true,
   });
-  console.log("isInView:", isInView);
 
   return (
     <div className="container">

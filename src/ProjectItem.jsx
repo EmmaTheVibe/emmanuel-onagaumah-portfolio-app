@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { tools } from "./data";
 
 export default function ProjectItem({ project, theme, mb, direction }) {
   const tabVariants = {
@@ -46,6 +47,10 @@ export default function ProjectItem({ project, theme, mb, direction }) {
       <div className={`screen ${direction}`}>
         <div className="project-pic">
           <img src={project.pc} alt="" className="pc" />
+          <img src={tools.spanner} alt="" className="spanner" />
+          <img src={tools.spanner} alt="" className="spanner2" />
+          <img src={tools.gear} alt="" className="gear" />
+          <img src={tools.gear} alt="" className="gear2" />
           <motion.img
             variants={tabVariants}
             initial="initial"
@@ -73,7 +78,7 @@ export default function ProjectItem({ project, theme, mb, direction }) {
           {project.technologies.map((tech) => (
             <img
               src={theme === "dark" && tech.darkurl ? tech.darkurl : tech.url}
-              style={{ width: "36px", height: "36px", marginRight: "12px" }}
+              className="tech-img"
               alt={tech.name}
               key={tech.id}
             />
