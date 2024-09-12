@@ -332,7 +332,7 @@ section {
 
 .about {
   line-height: 30px;
-  width: 825px;
+  width: 75%;
 }
 .strike {
   text-decoration: line-through;
@@ -786,6 +786,12 @@ button:hover {
 
   .container {
     width: 700px;
+  }
+
+  .about {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .showbox.skills-grid-container {

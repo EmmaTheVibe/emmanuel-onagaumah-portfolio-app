@@ -71,10 +71,9 @@ export default function Skills({ theme }) {
             <em className="strike">Hello world</em>...Hi, my name is Onagaumah
             Emmanuel. I spend my days writing code, and my nights stressing over
             bugs. I build clean, responsive, and user-friendly websites. I
-            strive to deliver seamless digital experiences that not only meet
-            client needs but also prioritize performance and accessibility. I’m
-            constantly learning new technologies to stay up-to-date. Below are
-            some technologies I use to bring my projects to life:
+            strive to deliver seamless digital experiences that prioritize
+            performance and accessibility. <br />
+            Below are some technologies I use to bring my projects to life:
           </motion.h3>
         </div>
 
