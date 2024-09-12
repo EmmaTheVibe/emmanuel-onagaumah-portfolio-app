@@ -23,13 +23,13 @@ body {
 }
 
 #dark {
-  color: #fff;
+  color: #f4eee4;
   background-color: #333;
 }
 
 #light {
-  color: #333;
-  background-color: #cecef7;
+  color: #572c23;
+  background-color: #f4eee4;
 }
 
 // #dark #nav {
@@ -65,7 +65,7 @@ $time: 1.2s;
 
 .jumper {
   fill: none;
-  stroke: #142d4c;
+  stroke: #572c23;
   stroke-width: 10px;
   stroke-dashoffset: 0;
   stroke-dasharray: 0, $len;
@@ -127,6 +127,50 @@ $time: 1.2s;
 //   font-size: 2rem;
 //   color: #fff;
 // }
+.main {
+  position: relative;
+}
+
+.hamburger {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  z-index: 7;
+  right: 10px;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  width: fit-content;
+  padding-bottom: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 0;
+  background-color: #fd4659;
+  // transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 105%;
+}
+.nav-link:hover {
+  transform: translateX(10px);
+}
+.nav-link.active::after {
+  width: 100%;
+  background-color: #fd4659;
+}
 
 .container {
   width: 1300px;
@@ -167,23 +211,9 @@ section {
   fill: #ebcca3;
   transition: all 0.3s ease;
 }
-
-.custom-shape-divider-top-1726062737 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-.custom-shape-divider-top-1726062737 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 51px;
-}
-.custom-shape-divider-top-1726062737 .shape-fill {
-  fill: #ffffff;
+.custom-shape-divider-bottom-1726045774 .projects-fill {
+  fill: #eebf83;
+  transition: all 0.3s ease;
 }
 
 #dark #home {
@@ -200,13 +230,19 @@ section {
 }
 #dark .skills-fill {
   // fill: #1b1a1a;
-  fill: #130908;
+  // fill: #130908;
+  fill: #190d0c;
 }
 #dark #projects {
   // background-color: #1b1a1a;
-  background-color: #130908;
+  background-color: #190d0c;
 }
-
+#dark .projects-fill {
+  fill: #0c0605;
+}
+#dark .footer {
+  background-color: #0c0605;
+}
 .section-title {
   font-size: 36px;
   margin-bottom: 20px;
@@ -232,20 +268,10 @@ section {
   height: 300px;
   width: 100%;
 }
-.avatar {
-  height: 100%;
-  width: 30%;
-  border: 1px solid red;
+.my-name {
+  color: #fd4659;
 }
-.about {
-  height: 100%;
-  width: 70%;
-}
-
 .toggle {
-  position: fixed;
-  right: 12px;
-  top: 30px;
   --size: 1.7rem;
 
   appearance: none;
@@ -281,7 +307,7 @@ section {
 }
 
 .toggle {
-  z-index: 3;
+  // z-index: 3;
   &:checked {
     & ~ .background {
       --bg: white;
@@ -301,18 +327,34 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 80px 0px 150px;
+  padding: 90px 0px 150px;
+}
+
+.about {
+  line-height: 30px;
+  width: 825px;
+}
+.strike {
+  text-decoration: line-through;
 }
 .padder {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   cursor: pointer;
-  align-items: center;
-  padding: 16px 0px 20px;
+  // align-items: center;
+  padding: 0 0 20px 0;
   // background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
   border-radius: 10px;
   margin-top: 30px;
+}
+.grid-toggler {
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-bottom: 4px;
+  width: fit-content;
+  border-bottom: 3px solid chocolate;
 }
 .showbox {
   overflow: hidden;
@@ -343,6 +385,10 @@ section {
 }
 .grid-item:hover img {
   transform: scale(1.1);
+}
+.label {
+  font-size: 14px;
+  font-weight: 900;
 }
 .skills-grid.scale {
   transform: scale(1);
@@ -398,9 +444,9 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 0 100px;
+  padding: 90px 0px 150px;
   background-color: #ebcca3;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 .blob {
   position: sticky;
@@ -545,10 +591,13 @@ section {
 .project-name {
   letter-spacing: 1.4px;
   font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
   color: #fd4659;
 }
 .project-details {
   margin-bottom: 16px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .info-line {
@@ -556,6 +605,10 @@ section {
   width: 100%;
   justify-content: space-between;
   align-items: end;
+}
+.with {
+  color: #fd4659;
+  font-weight: 700;
 }
 
 .tech-list {
@@ -577,18 +630,113 @@ section {
   height: 40px;
   padding-bottom: 2px;
   background-color: #fd4659;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
-  color: #331914;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
-#dark .project-link {
-  color: #fff;
+.project-link:hover {
+  transform: scale(1.1);
+}
+.project-link a {
+  color: #f4eee4;
+  text-decoration: none;
+}
+#dark .project-link a {
+  color: #f4eee4;
 }
 
 ul {
   list-style: none;
+}
+
+.footer {
+  background-color: #eebf83;
+  padding: 90px 0px 150px;
+  transition: background-color 0.3s ease;
+}
+
+.form-label {
+  margin-bottom: 18px;
+}
+#name,
+#email,
+#message {
+  margin-bottom: 4px;
+  border-radius: 10px;
+  height: 50px;
+  width: 250px;
+  padding: 0 18px;
+  color: #572c23;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  border: none;
+  background-color: #f4eee4;
+}
+#message {
+  padding: 16px 18px;
+  height: 100px;
+}
+#name::placeholder {
+  color: #888;
+  font-weight: 500;
+  font-style: italic;
+}
+#email::placeholder {
+  color: #888;
+  font-weight: 500;
+  font-style: italic;
+}
+#message::placeholder {
+  color: #888;
+  font-weight: 600;
+  font-style: italic;
+}
+#name:focus {
+  border: 2px solid #fd4659;
+  outline: none;
+}
+#email:focus {
+  border: 2px solid #fd4659;
+  outline: none;
+}
+#message:focus {
+  border: 2px solid #fd4659;
+  outline: none;
+}
+
+.error {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(0, 100%, 66%);
+}
+button {
+  background-color: #fd4659;
+  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  color: #f4eee4;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+  transform: scale(1.06);
+}
+#dark button {
+  color: #f4eee4;
+}
+
+.popup {
+  background-color: #f4eee4;
+}
+.popup-txt {
+  color: #fd4659;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1600px) {

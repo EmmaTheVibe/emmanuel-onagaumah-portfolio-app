@@ -4,31 +4,91 @@ import { motion, useInView } from "framer-motion";
 
 export default function Skills({ theme }) {
   const [showGrid, setShowGrid] = useState(false);
-  const ref = useRef(null);
-  const isInView = useInView(ref, {
-    amount: "all",
-    once: true,
-  });
+
+  const titleVariants = {
+    initial: {
+      opacity: 0,
+      x: -100,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.3,
+        delay: 0.2,
+      },
+    },
+  };
+
+  const textVariants = {
+    initial: {
+      opacity: 0,
+      x: -100,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.3,
+        delay: 0.3,
+      },
+    },
+  };
+  const padderVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+
+      transition: {
+        duration: 0.3,
+        delay: 0.4,
+      },
+    },
+  };
 
   return (
     <div className="container">
-      <div className="skills" ref={ref}>
-        <motion.div
-          // initial={{ y: 100 }}
-          animate={isInView ? { y: 0 } : { y: 100 }}
-          transition={{ duration: 0.3 }}
-        >
-          <h2 className="section-title">Toolbox</h2>
-          <h3>Skills and technologies i use</h3>
-          <p>Tap to {showGrid ? "collapse" : "expand"}</p>
-        </motion.div>
+      <div className="skills">
+        <div>
+          <motion.h2
+            variants={titleVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="section-title"
+          >
+            About me
+          </motion.h2>
+          <motion.h3
+            variants={textVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="about"
+          >
+            <em className="strike">Hello world</em>...Hi, my name is Onagaumah
+            Emmanuel. I spend my days writing code, and my nights stressing over
+            bugs. I build clean, responsive, and user-friendly websites. I
+            strive to deliver seamless digital experiences that not only meet
+            client needs but also prioritize performance and accessibility. I’m
+            constantly learning new technologies to stay up-to-date. Below are
+            some technologies I use to bring my projects to life:
+          </motion.h3>
+        </div>
 
         <motion.div
-          animate={isInView ? { y: 0 } : { y: 100 }}
-          transition={{ duration: 0.3, delay: 0.2 }}
           className={`padder ${showGrid ? "expand" : "shrink"}`}
           onClick={() => setShowGrid((curr) => !curr)}
+          variants={padderVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
         >
+          <p className="grid-toggler">
+            <em>{showGrid ? "Collapse" : "Expand"} toolbox</em>
+          </p>
           <div
             className={`showbox ${
               showGrid ? "skills-grid-container" : "slider"
@@ -49,9 +109,12 @@ export default function Skills({ theme }) {
                     }
                     alt={skill.name}
                     className="skill-img"
-                    style={{ color: "red" }}
                   />
-                  {showGrid && <p className="label">{skill.name}</p>}
+                  {showGrid && (
+                    <p className="label">
+                      <em>{skill.name}</em>
+                    </p>
+                  )}
                 </div>
               ))}
             </div>

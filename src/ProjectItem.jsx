@@ -80,7 +80,9 @@ export default function ProjectItem({ project, theme, mb, direction }) {
 
         <div className="info-line">
           <div className="tech-line">
-            <p>Built with:</p>
+            <p className="with">
+              <em>Built with:</em>
+            </p>
             <div className="tech-list">
               {project.technologies.map((tech) => (
                 <img
@@ -95,17 +97,13 @@ export default function ProjectItem({ project, theme, mb, direction }) {
             </div>
           </div>
           <div className="project-link">
-            <Link to={project.link}>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
               <p>
                 <em>View site</em>
               </p>
-            </Link>
+            </a>
           </div>
         </div>
-
-        {/* <a href={project.link} target="_blank" rel="noopener noreferrer">
-          Link
-        </a> */}
       </div>
     </motion.li>
   );

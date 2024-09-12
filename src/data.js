@@ -1,6 +1,6 @@
 const projectList = [
   {
-    id: 5,
+    id: 0,
     name: "Parkway wallet website",
     link: "https://wallet.parkway.ng/",
     // image: "./images/parkway-wallet-snip.PNG",
@@ -33,7 +33,7 @@ const projectList = [
   },
 
   {
-    id: 2,
+    id: 1,
     name: "Room homepage",
     link: "https://room-homepage-teal.vercel.app/",
     // image: "./Mockups/room-mockup.png",
@@ -63,7 +63,7 @@ const projectList = [
   },
 
   {
-    id: 3,
+    id: 2,
     name: "Banking site demo",
     link: "https://banking-app-eight-kappa.vercel.app/",
     // image: "./images/bank.PNG",
@@ -97,17 +97,14 @@ const projectList = [
   },
 
   {
-    id: 4,
+    id: 3,
     name: "Sunnyside landing page",
     link: "https://sunnyside-landing-page-olive.vercel.app/",
     // image: "./Mockups/sunnyside-mockup.png",
     pc: "./Mockups/sunnyside-pc.png",
     mobile: "./Mockups/sunnyside-mobile.png",
     tab: "./Mockups/sunnyside-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
+    details: `One of my favorite designs because I'm a sucker for grids and fun colors 🧍🏾‍♂️. I used framer motion for most of the transitions. The text animation was a challenging part for me...till I locked in. Looks cool doesn't it? This site is refreshing and responsive on all screen sizes.`,
     technologies: [
       {
         id: 1,
@@ -129,17 +126,14 @@ const projectList = [
   },
 
   {
-    id: 1,
+    id: 4,
     name: "Loopstudios landing page",
     link: "https://loopstudios-landing-page-one-ruby.vercel.app/",
     // image: "./Mockups/loopstudios-mockup.png",
     pc: "./Mockups/loopstudios-pc.png",
     mobile: "./Mockups/loopstudios-mobile.png",
     tab: "./Mockups/loopstudios-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
+    details: `Reality is often disappointing but virtual reality actually rules! This site is a demo landing page for a VR company . I used framer motion for some of the animations and included some Material UI components. Building this was a great way for me to practice my animation skills.`,
     technologies: [
       {
         id: 1,
@@ -161,17 +155,14 @@ const projectList = [
   },
 
   {
-    id: 6,
+    id: 5,
     name: "eCommerce product page",
     link: "https://ecommerce-product-page-puce-five.vercel.app/",
     // image: "./images/ecommerce-product-page.PNG",
     pc: "./Mockups/ecommerce-pc.png",
     mobile: "./Mockups/ecommerce-mobile.png",
     tab: "./Mockups/ecommerce-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
+    details: `This is a practice e-commerce page for a single item. There's a carousel with various images of the item and a check-out cart. The side menu on smaller screens and modal on larger screens are Material UI components.`,
     technologies: [
       {
         id: 1,
@@ -194,17 +185,14 @@ const projectList = [
   },
 
   {
-    id: 7,
+    id: 6,
     name: " Product order page",
     link: "https://emmathevibe.github.io/product-list-main/",
     // image: "./images/product-list.PNG",
     pc: "./Mockups/product-list-pc.png",
     mobile: "./Mockups/product-list-mobile.png",
     tab: "./Mockups/product-list-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
+    details: `Order up! This is another practice e-commerce page with lots of products to choose from. It includes a real-time cart update feature as well as a receipt after order confirmation.`,
     technologies: [
       {
         id: 1,
@@ -220,6 +208,30 @@ const projectList = [
       },
       {
         id: 3,
+        name: "CSS",
+        url: "./images/css.svg",
+      },
+    ],
+  },
+
+  {
+    id: 7,
+    name: " Interactive card form",
+    link: "https://interactive-card-form-sepia.vercel.app/",
+    // image: "./images/product-list.PNG",
+    pc: "./Mockups/interactive-card-pc.png",
+    mobile: "./Mockups/interactive-card-mobile.png",
+    tab: "./Mockups/interactive-card-tab.png",
+    details: `This is a simple card form where your details reflect in real time. I used react-hook-form for the form validation and error handling. This page is responsive on all devices.`,
+    technologies: [
+      {
+        id: 1,
+        name: "REACT",
+        url: "./images/react-dark.svg",
+        darkurl: "./images/react.svg",
+      },
+      {
+        id: 2,
         name: "CSS",
         url: "./images/css.svg",
       },
@@ -228,43 +240,13 @@ const projectList = [
 
   {
     id: 8,
-    name: " Interactive card form",
-    link: "https://interactive-card-form-sepia.vercel.app/",
-    // image: "./images/product-list.PNG",
-    pc: "./Mockups/interactive-card-pc.png",
-    mobile: "./Mockups/interactive-card-mobile.png",
-    tab: "./Mockups/interactive-card-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
-    technologies: [
-      {
-        id: 1,
-        name: "REACT",
-        url: "./images/react-dark.svg",
-        darkurl: "./images/react.svg",
-      },
-      {
-        id: 2,
-        name: "CSS",
-        url: "./images/css.svg",
-      },
-    ],
-  },
-
-  {
-    id: 9,
     name: "Advice generator",
     link: "https://advice-generator-app-ten-tawny.vercel.app/",
     // image: "./images/quote-generator.PNG",
     pc: "./Mockups/advice-pc.png",
     mobile: "./Mockups/advice-mobile.png",
     tab: "./Mockups/advice-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
+    details: `Why ask your friends for advice when this site I built at 2am on a random Thursday night is here for you? This was an online coding challenge. I used axios for the API fetching.`,
     technologies: [
       {
         id: 1,
@@ -287,17 +269,14 @@ const projectList = [
   },
 
   {
-    id: 10,
+    id: 9,
     name: "Age calculator",
     link: "https://emmathevibe.github.io/age-calculator-app-main/index.html",
     // image: "./images/age-calculator-app.PNG",
     pc: "./Mockups/age-pc.png",
     mobile: "./Mockups/age-mobile.png",
     tab: "./Mockups/age-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
+    details: `This is an age calculator. Fill in your date of birth and calculate your age to the day! I built this aeons ago and it was my first brush with form validation. It was really challenging to pull off but I learnt a lot in the process. `,
     technologies: [
       {
         id: 1,
@@ -318,17 +297,14 @@ const projectList = [
   },
 
   {
-    id: 11,
+    id: 10,
     name: "Multi-step form",
     link: "https://emmathevibe.github.io/multi-step-form/",
     // image: "./images/multi-step-form.PNG",
     pc: "./Mockups/multistep-pc.png",
     mobile: "./Mockups/multistep-mobile.png",
     tab: "./Mockups/multistep-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
+    details: `A multi-step form with multiple stages. This was an online coding challenge that helped me get better with layouts and CSS positions. The form is interactive and responsive on all devices.`,
     technologies: [
       {
         id: 1,
@@ -446,4 +422,13 @@ const tools = {
   star: "./images/star.svg",
 };
 
-export { projectsBg, projectList, skillsList, tools };
+const togglers = { hamburger: "./images/hamburger.svg" };
+
+const navLinks = [
+  { name: "Home", to: "home" },
+  { name: "About", to: "skills" },
+  { name: "Projects", to: "projects" },
+  { name: "Contact", to: "contact" },
+];
+
+export { projectsBg, projectList, skillsList, tools, togglers, navLinks };
