@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { tools } from "./data";
+import { Link } from "react-scroll";
 
 export default function ProjectItem({ project, theme, mb, direction }) {
   const tabVariants = {
@@ -71,22 +72,40 @@ export default function ProjectItem({ project, theme, mb, direction }) {
       </div>
 
       <div className="project-info">
-        <h3 className="project-name">{project.name}</h3>
-        <p className="project-details">{project.details}</p>
-        <p>Built with:</p>
-        <div className="tech-list">
-          {project.technologies.map((tech) => (
-            <img
-              src={theme === "dark" && tech.darkurl ? tech.darkurl : tech.url}
-              className="tech-img"
-              alt={tech.name}
-              key={tech.id}
-            />
-          ))}
+        <div className="name-line">
+          <div className="dash"></div>
+          <h3 className="project-name">{project.name}</h3>
         </div>
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
+        <p className="project-details">{project.details}</p>
+
+        <div className="info-line">
+          <div className="tech-line">
+            <p>Built with:</p>
+            <div className="tech-list">
+              {project.technologies.map((tech) => (
+                <img
+                  src={
+                    theme === "dark" && tech.darkurl ? tech.darkurl : tech.url
+                  }
+                  className="tech-img"
+                  alt={tech.name}
+                  key={tech.id}
+                />
+              ))}
+            </div>
+          </div>
+          <div className="project-link">
+            <Link to={project.link}>
+              <p>
+                <em>View site</em>
+              </p>
+            </Link>
+          </div>
+        </div>
+
+        {/* <a href={project.link} target="_blank" rel="noopener noreferrer">
           Link
-        </a>
+        </a> */}
       </div>
     </motion.li>
   );

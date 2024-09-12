@@ -1,16 +1,17 @@
 const projectList = [
   {
     id: 5,
-    name: "Parkway wallet site",
+    name: "Parkway wallet website",
     link: "https://wallet.parkway.ng/",
     // image: "./images/parkway-wallet-snip.PNG",
     pc: "./Mockups/parkway-pc.png",
     mobile: "./Mockups/parkway-mobile.png",
     tab: "./Mockups/parkway-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-          sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-          molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-          natus error.`,
+    // details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
+    //       sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
+    //       molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
+    //       natus error.`,
+    details: `I built this website while working as an intern at Parkway Projects Ltd in 2023. It is the official website for the Parkway Wallet app available on all mobile stores. This was my first time working in a team. I built the landing page and handled all animations, transitions and functionalities.`,
     technologies: [
       {
         id: 1,
@@ -39,10 +40,7 @@ const projectList = [
     pc: "./Mockups/room-pc.png",
     mobile: "./Mockups/room-mobile.png",
     tab: "./Mockups/room-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
+    details: `I really enjoyed designing this cool e-commerce homepage. It was a really fun way to sharpen my layout and transition skills. It includes an image carousel and I used a few Material UI components here and there. This page is responsive on all devices.`,
     technologies: [
       {
         id: 1,
@@ -72,10 +70,7 @@ const projectList = [
     pc: "./Mockups/bank-pc.png",
     mobile: "./Mockups/bank-mobile.png",
     tab: "./Mockups/bank-tab.png",
-    details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-              sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-              molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-              natus error.`,
+    details: `I built this cool banking site to simulate the functionalities of a real bank app...with fake money of course 💀. Users can sign up, login, deposit, transfer, change pfps and do so much more. Sign up today, we're changing lives!`,
     technologies: [
       {
         id: 1,

@@ -211,6 +211,10 @@ section {
   font-size: 36px;
   margin-bottom: 20px;
   font-family: "Comfortaa", sans-serif;
+  color: #fd4659;
+  border-bottom: 5px solid chocolate;
+  padding-bottom: 6px;
+  width: fit-content;
 }
 
 #home {
@@ -525,16 +529,36 @@ section {
 .project-info {
   width: 100%;
 }
-
-.project-name {
+.name-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
   margin-bottom: 16px;
+}
+.dash {
+  width: 24px;
+  height: 3px;
+  margin-right: 10px;
+  transform: translateY(-1px);
+  background-color: chocolate;
+}
+.project-name {
   letter-spacing: 1.4px;
   font-family: "Comfortaa", sans-serif;
   color: #fd4659;
 }
+.project-details {
+  margin-bottom: 16px;
+}
+
+.info-line {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+}
 
 .tech-list {
-  margin-bottom: 16px;
   display: flex;
   // background-color: rgb(201, 195, 88);
   border-bottom: 3px solid chocolate;
@@ -546,6 +570,21 @@ section {
   height: 36px;
   margin-right: 8px;
   // color: #28727c;
+}
+
+.project-link {
+  width: 100px;
+  height: 40px;
+  padding-bottom: 2px;
+  background-color: #fd4659;
+  font-family: "Kanit", sans-serif;
+  color: #331914;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dark .project-link {
+  color: #fff;
 }
 
 ul {
