@@ -425,7 +425,7 @@ const tools = {
 const togglers = { hamburger: "./images/hamburger.svg" };
 
 const navLinks = [
-  { name: "Home", to: "home" },
+  { name: "Home", to: "home", link: "" },
   { name: "About", to: "skills" },
   { name: "Projects", to: "projects" },
   { name: "Contact", to: "contact" },

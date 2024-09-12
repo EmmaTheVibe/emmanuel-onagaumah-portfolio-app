@@ -507,12 +507,10 @@ section {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-// .screen:hover .project-pic {
-//   transform: scale(1.03);
+
+// #dark .screen {
+//   background-color: #484848;
 // }
-#dark .screen {
-  // background-color: #484848;
-}
 .project-pic {
   width: 420px;
   height: 230px;
@@ -772,8 +770,6 @@ button:hover {
     gap: 40px;
   }
 
-  .projects-list {
-  }
   .screen {
     width: 100%;
   }
