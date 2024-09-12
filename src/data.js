@@ -425,10 +425,35 @@ const tools = {
 const togglers = { hamburger: "./images/hamburger.svg" };
 
 const navLinks = [
-  { name: "Home", to: "home", link: "" },
-  { name: "About", to: "skills" },
-  { name: "Projects", to: "projects" },
-  { name: "Contact", to: "contact" },
+  { name: "Home", to: "home", image: "./images/home.svg", id: "homesvg" },
+  { name: "About", to: "skills", image: "./images/about.svg", id: "aboutsvg" },
+  {
+    name: "Projects",
+    to: "projects",
+    image: "./images/projects.svg",
+    id: "projectssvg",
+  },
+  {
+    name: "Contact",
+    to: "contact",
+    image: "./images/contact.svg",
+    id: "contactsvg",
+  },
 ];
 
-export { projectsBg, projectList, skillsList, tools, togglers, navLinks };
+const socials = {
+  insta: "./images/insta.svg",
+  github: "./images/github2.svg",
+  linkedIn: "./images/linkedin.svg",
+  email: "./images/email.svg",
+};
+
+export {
+  projectsBg,
+  projectList,
+  skillsList,
+  tools,
+  togglers,
+  navLinks,
+  socials,
+};

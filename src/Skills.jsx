@@ -68,11 +68,10 @@ export default function Skills({ theme }) {
             viewport={{ once: true }}
             className="about"
           >
-            <em className="strike">Hello world</em>...Hi, my name is Onagaumah
-            Emmanuel. I spend my days writing code, and my nights stressing over
-            bugs. I build clean, responsive, and user-friendly websites. I
-            strive to deliver seamless digital experiences that prioritize
-            performance and accessibility. <br />
+            Hi, my name is Onagaumah Emmanuel. I spend my days writing code, and
+            my nights stressing over bugs. I build clean, responsive, and
+            user-friendly websites. I strive to deliver seamless digital
+            experiences that prioritize performance and accessibility. <br />
             Below are some technologies I use to bring my projects to life:
           </motion.h3>
         </div>

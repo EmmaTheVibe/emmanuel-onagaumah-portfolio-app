@@ -27,7 +27,7 @@ export default function DrawerTab({
         PaperProps={{
           sx: {
             backgroundColor: theme === "light" ? "#ebcca3" : "#190d0c",
-            padding: "30px 45px",
+            padding: "80px 45px ",
             width: "250px",
           },
         }}
@@ -36,22 +36,48 @@ export default function DrawerTab({
           <div className="drawer-tabs">
             {navLinks.map((navLink, index) => (
               <Link to={navLink.to} smooth={true} duration={500} key={index}>
-                <p
-                  className={`nav-link ${active === index ? "active" : ""}`}
-                  onClick={() => handleClick(index)}
-                  style={{ color: theme === "light" ? "#572c23" : "#f4eee4" }}
-                >
-                  {navLink.name}
-                </p>
+                <div className="link-bar" onClick={() => handleClick(index)}>
+                  <div
+                    className={`link-container ${
+                      active === index ? "active" : ""
+                    }`}
+                  >
+                    <img
+                      src={navLink.image}
+                      alt=""
+                      className="nav-img"
+                      id={navLink.id}
+                    />
+
+                    <p
+                      className="nav-link"
+                      style={{
+                        color: theme === "light" ? "#572c23" : "#f4eee4",
+                      }}
+                    >
+                      {navLink.name}
+                    </p>
+                  </div>
+                </div>
               </Link>
             ))}
-            <input
-              id="toggle"
-              className="toggle"
-              type="checkbox"
-              //   defaultChecked={theme === "light"}
-              onClick={toggleTheme}
-            />
+            <div className="mode-bar">
+              <input
+                id="toggle"
+                className="toggle"
+                type="checkbox"
+                //   defaultChecked={theme === "light"}
+                onClick={toggleTheme}
+              />
+              <p
+                className="mode-txt"
+                style={{
+                  color: theme === "light" ? "#572c23" : "#f4eee4",
+                }}
+              >
+                {theme === "light" ? "Dark" : "Light"} Mode
+              </p>
+            </div>
           </div>
         </div>
       </SwipeableDrawer>

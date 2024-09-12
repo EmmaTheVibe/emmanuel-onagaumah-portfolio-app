@@ -67,7 +67,7 @@ export default function Footer({ showPopUp }) {
         viewport={{ once: true }}
         className="section-title"
       >
-        Contact me
+        Get in touch
       </motion.h2>
       <form action="" noValidate onSubmit={handleSubmit(handleRegistration)}>
         <div className="form-label">

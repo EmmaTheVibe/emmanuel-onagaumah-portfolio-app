@@ -138,38 +138,78 @@ $time: 1.2s;
   z-index: 7;
   right: 10px;
   cursor: pointer;
-}
-
-.nav-link {
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: 700;
-  width: fit-content;
-  padding-bottom: 4px;
-  cursor: pointer;
-  position: relative;
   transition: all 0.3s ease;
 }
-.nav-link::after {
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+.link-bar {
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.link-container {
+  display: flex;
+  align-items: center;
+
+  transition: all 0.3s ease;
+  width: fit-content;
+  position: relative;
+}
+.nav-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+}
+#homesvg {
+  transform: translateY(-3px);
+}
+#aboutsvg {
+  transform: translateY(-1.5px);
+}
+#projectssvg {
+  transform: translateY(-1px);
+}
+#contactsvg {
+  transform: translateY(-1px);
+}
+.link-container::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -5px;
   height: 3px;
-  width: 0;
+  width: 30px;
   background-color: #fd4659;
   // transform: translateX(-50%);
   transition: width 0.3s ease;
 }
-.nav-link:hover::after {
+.link-bar:hover .link-container::after {
   width: 105%;
 }
-.nav-link:hover {
+.link-bar:hover .link-container {
   transform: translateX(10px);
 }
-.nav-link.active::after {
-  width: 100%;
+.link-container.active::after {
+  width: 105%;
   background-color: #fd4659;
+}
+.nav-link {
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.mode-bar {
+  display: flex;
+  align-items: center;
+}
+.mode-txt {
+  font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  margin-left: 16px;
 }
 
 .container {
@@ -282,7 +322,8 @@ section {
   height: var(--size);
   box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
   border-radius: 999px;
-  color: hsl(240, 100%, 95%);
+  // color: hsl(240, 100%, 95%);
+  color: #fd4659;
 
   transition: all 500ms;
 
@@ -292,7 +333,8 @@ section {
     --offset-diagonal: calc(var(--size) * 0.45);
 
     transform: scale(0.75);
-    color: hsl(40, 89%, 60%);
+    // color: hsl(40, 89%, 60%);
+    color: #fd4659;
     box-shadow: inset 0 0 0 var(--size),
       calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
       var(--offset-orthogonal) 0 0 var(--ray-size),
