@@ -1,33 +1,5 @@
 const projectList = [
   {
-    id: 0,
-    name: "Parkway wallet website",
-    link: "https://wallet.parkway.ng/",
-    pc: "./Mockups/parkway-pc.png",
-    mobile: "./Mockups/parkway-mobile.png",
-    tab: "./Mockups/parkway-tab.png",
-    details: `I built this website while working as an intern at Parkway Projects Ltd in 2023. It is the official website for the Parkway Wallet app available on all mobile stores. This was my first time working in a team. I built the landing page and handled all animations, transitions and functionalities.`,
-    technologies: [
-      {
-        id: 1,
-        name: "HTML",
-        url: "./images/html.svg",
-      },
-      {
-        id: 2,
-        name: "CSS",
-        url: "./images/css.svg",
-      },
-      {
-        id: 3,
-        name: "JAVASCRIPT",
-        url: "./images/javascript.svg",
-      },
-      { id: 4, name: "BOOTSTRAP", url: "./images/bootstrap.svg" },
-    ],
-  },
-
-  {
     id: 2,
     name: "Banking site",
     link: "https://banking-app-eight-kappa.vercel.app/",
@@ -57,6 +29,33 @@ const projectList = [
         name: "GIT",
         url: "./images/git.svg",
       },
+    ],
+  },
+  {
+    id: 0,
+    name: "Parkway wallet website",
+    link: "https://wallet.parkway.ng/",
+    pc: "./Mockups/parkway-pc.png",
+    mobile: "./Mockups/parkway-mobile.png",
+    tab: "./Mockups/parkway-tab.png",
+    details: `I built this website while working as an intern at Parkway Projects Ltd in 2023. It is the official website for the Parkway Wallet app available on all mobile stores. This was my first time working in a team. I built the landing page and handled all animations, transitions and functionalities.`,
+    technologies: [
+      {
+        id: 1,
+        name: "HTML",
+        url: "./images/html.svg",
+      },
+      {
+        id: 2,
+        name: "CSS",
+        url: "./images/css.svg",
+      },
+      {
+        id: 3,
+        name: "JAVASCRIPT",
+        url: "./images/javascript.svg",
+      },
+      { id: 4, name: "BOOTSTRAP", url: "./images/bootstrap.svg" },
     ],
   },
 
