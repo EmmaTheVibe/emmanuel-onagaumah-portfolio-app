@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { desk } from "./data";
+import { desk } from "../utils/data";
 export default function HomeContent({ toggleDarkMode }) {
   const divRef = useRef(null);
 

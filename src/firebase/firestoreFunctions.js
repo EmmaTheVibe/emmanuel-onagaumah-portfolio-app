@@ -1,7 +1,6 @@
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "./firebaseConfig";
 
-// Function to add form data to a Firestore collection
 export const submitFormData = async (formData) => {
   try {
     const docRef = await addDoc(collection(db, "Messages"), formData);

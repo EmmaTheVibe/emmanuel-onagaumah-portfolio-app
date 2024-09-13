@@ -2,7 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { Link } from "react-scroll";
-import { navLinks } from "./data";
+import { navLinks } from "../utils/data";
 
 export default function DrawerTab({
   openDrawer,

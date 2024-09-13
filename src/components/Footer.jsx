@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { submitFormData } from "./firebase/firestoreFunctions";
+import { submitFormData } from "../firebase/firestoreFunctions";
 import CircularProgress from "@mui/material/CircularProgress";
-import { socials } from "./data";
+import { socials } from "../utils/data";
 
 const titleVariants = {
   initial: {
@@ -49,10 +49,6 @@ export default function Footer({ showPopUp }) {
     },
     email: {
       required: "Required",
-      //   pattern: {
-      //     value: /^[A-Za-z ]+$/i,
-      //     message: "Wrong format, letters only",
-      //   },
     },
     message: {
       required: "Required",

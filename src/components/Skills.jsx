@@ -1,6 +1,6 @@
-import { skillsList } from "./data";
-import { useState, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { skillsList } from "../utils/data";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Skills({ theme }) {
   const [showGrid, setShowGrid] = useState(false);

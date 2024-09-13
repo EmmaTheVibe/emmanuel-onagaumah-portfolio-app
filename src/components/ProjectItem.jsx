@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { tools } from "./data";
-import { Link } from "react-scroll";
+import { tools } from "../utils/data";
 
 export default function ProjectItem({ project, theme, mb, direction }) {
   const tabVariants = {

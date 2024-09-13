@@ -18,28 +18,17 @@ $quantity: 15;
   padding: 0;
 }
 body {
-  // font-family: "Kanit", sans-serif;
   font-family: "Comfortaa", sans-serif;
 }
 
 #dark {
   color: #f4eee4;
-  background-color: #333;
+  background-color: #572c23;
 }
 
 #light {
   color: #572c23;
   background-color: #f4eee4;
-}
-
-// #dark #nav {
-//   color: #fff;
-//   background-color: #333;
-// }
-
-#light #nav {
-  color: #333;
-  background-color: #fff;
 }
 
 .jump-container {
@@ -55,17 +44,15 @@ body {
   width: 320px;
   height: 320px;
   padding-left: 15px;
-
-  // position: absolute;
   overflow: visible;
 }
-// path.getTotalLength() wiill give you path length
+
 $len: 136.71884155273438px;
 $time: 1.2s;
 
 .jumper {
   fill: none;
-  stroke: #572c23;
+  stroke: #fd4659;
   stroke-width: 10px;
   stroke-dashoffset: 0;
   stroke-dasharray: 0, $len;
@@ -73,7 +60,6 @@ $time: 1.2s;
 
   &.clone {
     opacity: 0.2;
-    // transform-origin for svg bugged in ff, so i'm using translateY hack
     transform: translateY(200px) scaleY(-1);
   }
 }
@@ -174,7 +160,6 @@ $time: 1.2s;
   height: 3px;
   width: 30px;
   background-color: #fd4659;
-  // transform: translateX(-50%);
   transition: width 0.3s ease;
 }
 .link-bar:hover .link-container::after {
@@ -197,6 +182,21 @@ $time: 1.2s;
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
+  width: fit-content;
+}
+.mode-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 0;
+  background-color: #fd4659;
+  transition: width 0.3s ease;
+}
+.mode-bar:hover::after {
+  width: 105%;
 }
 .mode-txt {
   font-weight: 700;
@@ -214,11 +214,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
-  // background-position: scroll;
-  // background-size: contain;
-  // background-repeat: no-repeat;
   background-attachment: fixed;
-  // color: #b4b4fa;
   position: relative;
 }
 
@@ -251,24 +247,18 @@ section {
 }
 
 #dark #home {
-  // background-color: #333;
   background-color: #331914;
 }
 #dark .home-fill {
-  // fill: #252424;
   fill: #23110e;
 }
 #dark .skills-section {
-  // background-color: #252424;
   background-color: #23110e;
 }
 #dark .skills-fill {
-  // fill: #1b1a1a;
-  // fill: #130908;
   fill: #190d0c;
 }
 #dark #projects {
-  // background-color: #1b1a1a;
   background-color: #190d0c;
 }
 #dark .projects-fill {
@@ -366,7 +356,6 @@ section {
   height: var(--size);
   box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
   border-radius: 999px;
-  // color: hsl(240, 100%, 95%);
   color: #fd4659;
 
   transition: all 500ms;
@@ -377,7 +366,6 @@ section {
     --offset-diagonal: calc(var(--size) * 0.45);
 
     transform: scale(0.75);
-    // color: hsl(40, 89%, 60%);
     color: #fd4659;
     box-shadow: inset 0 0 0 var(--size),
       calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
@@ -393,7 +381,6 @@ section {
 }
 
 .toggle {
-  // z-index: 3;
   &:checked {
     & ~ .background {
       --bg: white;
@@ -429,9 +416,7 @@ section {
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-  // align-items: center;
   padding: 0 0 20px 0;
-  // background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
   border-radius: 10px;
   margin-top: 30px;
 }
@@ -515,12 +500,8 @@ section {
     left: calc(60px * -5);
   }
 }
-// .slider:hover .item {
-//   animation-play-state: paused !important;
-//   filter: grayscale(1);
-// }
+
 .slider .item:hover {
-  // filter: grayscale(0);
   transform: scale(1.04);
 }
 
@@ -560,15 +541,12 @@ section {
 }
 .project-item.is-visible-last {
   opacity: 1;
-  // transform: translateX(50%);
 }
 
 .screen {
-  // background-color: #fff;
   width: 80%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  // border-bottom: 1.5px solid rgb(219, 229, 230);
   position: relative;
   display: flex;
   justify-content: end;
@@ -577,21 +555,7 @@ section {
 .screen.reverse {
   justify-content: start;
 }
-.screen::before {
-  content: "";
-  width: 100%;
-  height: 40px;
-  // background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
 
-// #dark .screen {
-//   background-color: #484848;
-// }
 .project-pic {
   width: 420px;
   height: 230px;
@@ -692,7 +656,6 @@ section {
 
 .tech-list {
   display: flex;
-  // background-color: rgb(201, 195, 88);
   border-bottom: 3px solid chocolate;
   width: fit-content;
   padding: 10px 0;
@@ -701,7 +664,6 @@ section {
   width: 36px;
   height: 36px;
   margin-right: 8px;
-  // color: #28727c;
 }
 
 .project-link {
@@ -858,8 +820,6 @@ button:hover {
   .container {
     width: 1280px;
   }
-  .project-pic {
-  }
 }
 
 @media screen and (max-width: 1410px) {
@@ -925,8 +885,6 @@ button:hover {
     width: 300px;
     height: 170px;
   }
-  .project-info {
-  }
 }
 
 @media screen and (max-width: 720px) {
@@ -964,7 +922,6 @@ button:hover {
 
   .projects-list {
     grid-template-columns: repeat(1, 1fr);
-    // gap: 30px;
   }
   .project-pic {
     width: 100%;

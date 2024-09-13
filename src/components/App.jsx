@@ -1,20 +1,21 @@
-import { useState, createContext, useRef } from "react";
-import { projectList } from "./data";
-import { projectsBg } from "./data";
+import { useState, createContext } from "react";
+import { projectList } from "../utils/data";
+import { projectsBg } from "../utils/data";
 import Section from "./Section";
 import ProjectsList from "./ProjectsList";
 import ProjectItem from "./ProjectItem";
+import Jumper from "./Jumper";
 import Skills from "./Skills";
 import HomeContent from "./HomeContent";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import OpacityVector from "./OpacityVector";
 import Footer from "./Footer";
 import PopUp from "./PopUp";
 import Slide from "@mui/material/Slide";
 import DrawerTab from "./DrawerTab";
-import { togglers } from "./data";
-import { clouds } from "./data";
+import { togglers } from "../utils/data";
+import { clouds } from "../utils/data";
 
 function SlideTransition(props) {
   return <Slide {...props} direction="up" />;
@@ -24,10 +25,9 @@ export const ThemeContext = createContext(null);
 function App() {
   const mb = useMediaQuery("(max-width: 980px)");
   const mb2 = useMediaQuery("(max-width: 720px)");
-  const [projects, setProjects] = useState(projectList);
+
   const [showJumper, setShowJumper] = useState(true);
-  const divRef = useRef(null);
-  const isInView = useInView(divRef, { threshold: 0.5, once: true });
+
   const [openDrawer, setOpenDrawer] = useState(false);
 
   const toggleDrawer = (event) => {
@@ -135,7 +135,7 @@ function App() {
                   Projects
                 </motion.h2>
                 <ProjectsList>
-                  {projects.map((project, index) => (
+                  {projectList.map((project, index) => (
                     <ProjectItem
                       mb={mb}
                       mb2={mb2}
@@ -157,51 +157,6 @@ function App() {
         )}
       </div>
     </ThemeContext.Provider>
-  );
-}
-
-function Jumper() {
-  return (
-    <span className="jumper-span">
-      <svg
-        viewBox="0 0 200 200"
-        preserveAspectRatio="xMidYMid meet"
-        className="jumper-svg"
-      >
-        <path
-          className="jumper"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M47.5,94.3c0-23.5,19.9-42.5,44.5-42.5s44.5,19,44.5,42.5"
-        />
-        <g stroke="#edd9be" strokeWidth="1">
-          <ellipse
-            className="circleL"
-            fill="none"
-            strokeMiterlimit="10"
-            cx="47.2"
-            cy="95.6"
-            rx="10.7"
-            ry="2.7"
-          />
-          <ellipse
-            className="circleR"
-            fill="none"
-            strokeMiterlimit="10"
-            cx="136.2"
-            cy="95.6"
-            rx="10.7"
-            ry="2.7"
-          />
-        </g>
-        <path
-          className="jumper clone"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M47.5,94.3c0-23.5,19.9-42.5,44.5-42.5s44.5,19,44.5,42.5"
-        />
-      </svg>
-    </span>
   );
 }
 

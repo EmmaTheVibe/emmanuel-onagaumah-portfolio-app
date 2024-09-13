@@ -1,11 +1,8 @@
-import { light } from "@mui/material/styles/createPalette";
-
 const projectList = [
   {
     id: 2,
     name: "Banking site demo",
     link: "https://banking-app-eight-kappa.vercel.app/",
-    // image: "./images/bank.PNG",
     pc: "./Mockups/bank-pc.png",
     mobile: "./Mockups/bank-mobile.png",
     tab: "./Mockups/bank-tab.png",
@@ -39,14 +36,9 @@ const projectList = [
     id: 0,
     name: "Parkway wallet website",
     link: "https://wallet.parkway.ng/",
-    // image: "./images/parkway-wallet-snip.PNG",
     pc: "./Mockups/parkway-pc.png",
     mobile: "./Mockups/parkway-mobile.png",
     tab: "./Mockups/parkway-tab.png",
-    // details: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
-    //       sit repellendus cum nobis aliquam! Nam quasi consequuntur hic
-    //       molestiae omnis cum eos aperiam fuga, porro iusto explicabo, quo,
-    //       natus error.`,
     details: `I built this website while working as an intern at Parkway Projects Ltd in 2023. It is the official website for the Parkway Wallet app available on all mobile stores. This was my first time working in a team. I built the landing page and handled all animations, transitions and functionalities.`,
     technologies: [
       {
@@ -72,7 +64,6 @@ const projectList = [
     id: 1,
     name: "Room homepage",
     link: "https://room-homepage-teal.vercel.app/",
-    // image: "./Mockups/room-mockup.png",
     pc: "./Mockups/room-pc.png",
     mobile: "./Mockups/room-mobile.png",
     tab: "./Mockups/room-tab.png",
@@ -102,7 +93,6 @@ const projectList = [
     id: 3,
     name: "Sunnyside landing page",
     link: "https://sunnyside-landing-page-olive.vercel.app/",
-    // image: "./Mockups/sunnyside-mockup.png",
     pc: "./Mockups/sunnyside-pc.png",
     mobile: "./Mockups/sunnyside-mobile.png",
     tab: "./Mockups/sunnyside-tab.png",
@@ -131,7 +121,6 @@ const projectList = [
     id: 4,
     name: "Loopstudios landing page",
     link: "https://loopstudios-landing-page-one-ruby.vercel.app/",
-    // image: "./Mockups/loopstudios-mockup.png",
     pc: "./Mockups/loopstudios-pc.png",
     mobile: "./Mockups/loopstudios-mobile.png",
     tab: "./Mockups/loopstudios-tab.png",
@@ -160,7 +149,6 @@ const projectList = [
     id: 5,
     name: "eCommerce product page",
     link: "https://ecommerce-product-page-puce-five.vercel.app/",
-    // image: "./images/ecommerce-product-page.PNG",
     pc: "./Mockups/ecommerce-pc.png",
     mobile: "./Mockups/ecommerce-mobile.png",
     tab: "./Mockups/ecommerce-tab.png",
@@ -190,7 +178,6 @@ const projectList = [
     id: 6,
     name: " Product order page",
     link: "https://emmathevibe.github.io/product-list-main/",
-    // image: "./images/product-list.PNG",
     pc: "./Mockups/product-list-pc.png",
     mobile: "./Mockups/product-list-mobile.png",
     tab: "./Mockups/product-list-tab.png",
@@ -220,7 +207,6 @@ const projectList = [
     id: 7,
     name: " Interactive card form",
     link: "https://interactive-card-form-sepia.vercel.app/",
-    // image: "./images/product-list.PNG",
     pc: "./Mockups/interactive-card-pc.png",
     mobile: "./Mockups/interactive-card-mobile.png",
     tab: "./Mockups/interactive-card-tab.png",
@@ -244,7 +230,6 @@ const projectList = [
     id: 8,
     name: "Advice generator",
     link: "https://advice-generator-app-ten-tawny.vercel.app/",
-    // image: "./images/quote-generator.PNG",
     pc: "./Mockups/advice-pc.png",
     mobile: "./Mockups/advice-mobile.png",
     tab: "./Mockups/advice-tab.png",
@@ -274,7 +259,6 @@ const projectList = [
     id: 9,
     name: "Age calculator",
     link: "https://emmathevibe.github.io/age-calculator-app-main/index.html",
-    // image: "./images/age-calculator-app.PNG",
     pc: "./Mockups/age-pc.png",
     mobile: "./Mockups/age-mobile.png",
     tab: "./Mockups/age-tab.png",
@@ -302,7 +286,6 @@ const projectList = [
     id: 10,
     name: "Multi-step form",
     link: "https://emmathevibe.github.io/multi-step-form/",
-    // image: "./images/multi-step-form.PNG",
     pc: "./Mockups/multistep-pc.png",
     mobile: "./Mockups/multistep-mobile.png",
     tab: "./Mockups/multistep-tab.png",
@@ -332,19 +315,16 @@ const skillsList = [
     id: 1,
     name: "HTML",
     url: "./images/html.svg",
-    // darkurl: "./images/html.svg",
   },
   {
     id: 2,
     name: "CSS",
     url: "./images/css.svg",
-    // darkurl: "./images/css.svg"
   },
   {
     id: 3,
     name: "JAVASCRIPT",
     url: "./images/javascript.svg",
-    // darkurl: "./images/javascript.svg",
   },
   {
     id: 4,
@@ -356,37 +336,31 @@ const skillsList = [
     id: 5,
     name: "SASS",
     url: "./images/sass.svg",
-    // darkurl: "./images/sass.svg",
   },
   {
     id: 6,
     name: "TAILWIND",
     url: "./images/tailwind.svg",
-    // darkurl: "./images/tailwind.svg",
   },
   {
     id: 7,
     name: "FRAMER",
     url: "./images/framer.svg",
-    // darkurl: "./images/framer.svg",
   },
   {
     id: 8,
     name: "GIT",
     url: "./images/git.svg",
-    // darkurl: "./images/git.svg"
   },
   {
     id: 9,
     name: "FIREBASE",
     url: "./images/firebase.svg",
-    // darkurl: "./images/firebase.svg",
   },
   {
     id: 10,
     name: "SUPABASE",
     url: "./images/supabase.svg",
-    // darkurl: "./images/supabase.svg",
   },
   {
     id: 11,
@@ -413,7 +387,6 @@ const skillsList = [
     url: "./images/github.svg",
     darkurl: "./images/github-darkmode.svg",
   },
-  //   { id: 16, name: "RESPONSIVE DESIGNS", url: "./images/responsive.svg" },
 ];
 
 const projectsBg = "./images/protruding-squares.svg";
