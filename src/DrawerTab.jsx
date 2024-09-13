@@ -61,13 +61,13 @@ export default function DrawerTab({
                 </div>
               </Link>
             ))}
-            <div className="mode-bar">
+            <div className="mode-bar" onClick={toggleTheme}>
               <input
                 id="toggle"
                 className="toggle"
+                readOnly
                 type="checkbox"
-                //   defaultChecked={theme === "light"}
-                onClick={toggleTheme}
+                checked={theme === "dark" ? true : false}
               />
               <p
                 className="mode-txt"

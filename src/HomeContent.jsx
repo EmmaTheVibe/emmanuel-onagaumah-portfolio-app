@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { desk } from "./data";
 export default function HomeContent({ toggleDarkMode }) {
   const divRef = useRef(null);
 
@@ -13,12 +14,13 @@ export default function HomeContent({ toggleDarkMode }) {
         transition={{ duration: 0.3 }}
         ref={divRef}
       >
-        <div>
-          <h1>
+        <div className="herobox">
+          <h1 className="hero-txt">
             Hi, I'm <span className="my-name">Emmanuel</span>
           </h1>
-          <h1>a Front-end web developer.</h1>
+          <h1 className="desc">a front-end web developer.</h1>
         </div>
+        <img src={desk} alt="" className="desk" />
       </motion.div>
     </div>
   );

@@ -1,4 +1,40 @@
+import { light } from "@mui/material/styles/createPalette";
+
 const projectList = [
+  {
+    id: 2,
+    name: "Banking site demo",
+    link: "https://banking-app-eight-kappa.vercel.app/",
+    // image: "./images/bank.PNG",
+    pc: "./Mockups/bank-pc.png",
+    mobile: "./Mockups/bank-mobile.png",
+    tab: "./Mockups/bank-tab.png",
+    details: `I built this cool banking site as a personal project, to simulate the functionalities of a real bank app...with fake money of course 💀. Users can sign up, login, deposit, transfer, change pfps and do so much more. Sign up today, we're changing lives!`,
+    technologies: [
+      {
+        id: 1,
+        name: "REACT",
+        url: "./images/react-dark.svg",
+        darkurl: "./images/react.svg",
+      },
+      {
+        id: 2,
+        name: "TAILWIND",
+        url: "./images/tailwind.svg",
+      },
+      {
+        id: 3,
+        name: "FIREBASE",
+        url: "./images/firebase.svg",
+      },
+      {
+        id: 4,
+        name: "GIT",
+        url: "./images/git.svg",
+      },
+    ],
+  },
+
   {
     id: 0,
     name: "Parkway wallet website",
@@ -63,40 +99,6 @@ const projectList = [
   },
 
   {
-    id: 2,
-    name: "Banking site demo",
-    link: "https://banking-app-eight-kappa.vercel.app/",
-    // image: "./images/bank.PNG",
-    pc: "./Mockups/bank-pc.png",
-    mobile: "./Mockups/bank-mobile.png",
-    tab: "./Mockups/bank-tab.png",
-    details: `I built this cool banking site to simulate the functionalities of a real bank app...with fake money of course 💀. Users can sign up, login, deposit, transfer, change pfps and do so much more. Sign up today, we're changing lives!`,
-    technologies: [
-      {
-        id: 1,
-        name: "REACT",
-        url: "./images/react-dark.svg",
-        darkurl: "./images/react.svg",
-      },
-      {
-        id: 2,
-        name: "TAILWIND",
-        url: "./images/tailwind.svg",
-      },
-      {
-        id: 3,
-        name: "FIREBASE",
-        url: "./images/firebase.svg",
-      },
-      {
-        id: 4,
-        name: "GIT",
-        url: "./images/git.svg",
-      },
-    ],
-  },
-
-  {
     id: 3,
     name: "Sunnyside landing page",
     link: "https://sunnyside-landing-page-olive.vercel.app/",
@@ -133,7 +135,7 @@ const projectList = [
     pc: "./Mockups/loopstudios-pc.png",
     mobile: "./Mockups/loopstudios-mobile.png",
     tab: "./Mockups/loopstudios-tab.png",
-    details: `Reality is often disappointing but virtual reality actually rules! This site is a demo landing page for a VR company . I used framer motion for some of the animations and included some Material UI components. Building this was a great way for me to practice my animation skills.`,
+    details: `Reality is often disappointing but virtual reality actually rules. This site is a demo landing page for a VR company . I used framer motion for some of the animations and included some Material UI components. Building this was a great way for me to practice my animation skills.`,
     technologies: [
       {
         id: 1,
@@ -441,12 +443,51 @@ const navLinks = [
   },
 ];
 
-const socials = {
-  insta: "./images/insta.svg",
-  github: "./images/github2.svg",
-  linkedIn: "./images/linkedin.svg",
-  email: "./images/email.svg",
-};
+const socials = [
+  { image: "./images/github2.svg", link: "https://github.com/EmmaTheVibe" },
+  {
+    image: "./images/twitter.svg",
+    link: "https://x.com/shiemofr?s=21&t=rX9JrzoTa74OLT4KNPETFw",
+  },
+  {
+    image: "./images/insta.svg",
+    link: "https://www.instagram.com/thevibebtw?igsh=eDVtdnh3Y3V0NWd3&utm_source=qr",
+  },
+  {
+    image: "./images/linkedin.svg",
+    link: "https://www.linkedin.com/in/onagaumah-emmanuel-44a969252/",
+  },
+];
+
+const clouds = [
+  {
+    light: "./images/cloud1.svg",
+    dark: "./images/cloud1-dark.svg",
+    className: "cloud1",
+  },
+  {
+    light: "./images/cloud1.svg",
+    dark: "./images/cloud1-dark.svg",
+    className: "cloud2",
+  },
+  {
+    light: "./images/cloud2.svg",
+    dark: "./images/cloud2-dark.svg",
+    className: "cloud3",
+  },
+  {
+    light: "./images/cloud3.svg",
+    dark: "./images/cloud3-dark.svg",
+    className: "cloud4",
+  },
+  {
+    light: "./images/cloud3.svg",
+    dark: "./images/cloud3-dark.svg",
+    className: "cloud5",
+  },
+];
+
+const desk = "./images/desk.svg";
 
 export {
   projectsBg,
@@ -456,4 +497,6 @@ export {
   togglers,
   navLinks,
   socials,
+  clouds,
+  desk,
 };
