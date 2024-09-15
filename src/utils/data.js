@@ -426,7 +426,7 @@ const socials = [
   },
   {
     image: "./images/linkedin.svg",
-    link: "https://www.linkedin.com/in/onagaumah-emmanuel-44a969252/",
+    link: "https://www.linkedin.com/in/emmanuel-onagaumah-44a969252/",
   },
 ];
 
