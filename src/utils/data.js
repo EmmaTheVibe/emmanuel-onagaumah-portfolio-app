@@ -421,8 +421,8 @@ const socials = [
     link: "https://x.com/shiemofr?s=21&t=rX9JrzoTa74OLT4KNPETFw",
   },
   {
-    image: "./images/insta.svg",
-    link: "https://www.instagram.com/thevibebtw?igsh=eDVtdnh3Y3V0NWd3&utm_source=qr",
+    image: "./images/dribbble.svg",
+    link: "https://dribbble.com/shiemo",
   },
   {
     image: "./images/linkedin.svg",
