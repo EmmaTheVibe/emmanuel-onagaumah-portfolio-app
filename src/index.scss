@@ -23,11 +23,11 @@ body {
 
 #dark {
   color: #f4eee4;
-  background-color: #572c23;
+  background-color: #331914;
 }
 
 #light {
-  color: #572c23;
+  color: #331914;
   background-color: #f4eee4;
 }
 
@@ -422,7 +422,7 @@ section {
 }
 .grid-toggler {
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   padding-bottom: 4px;
   width: fit-content;
   border-bottom: 3px solid chocolate;
@@ -465,8 +465,8 @@ section {
   transform: scale(1);
 }
 .skill-img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 7px;
 }
 .slider {
@@ -650,7 +650,6 @@ section {
   align-items: end;
 }
 .with {
-  color: #fd4659;
   font-weight: 700;
 }
 
@@ -728,6 +727,12 @@ ul {
 .form-label {
   margin-bottom: 18px;
 }
+.form-label input:-webkit-autofill {
+  background-color: #f4eee4 !important;
+  color: #572c23 !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 #name,
 #email,
 #message {
@@ -816,6 +821,8 @@ button:hover {
 .popup-txt {
   color: #fd4659;
   font-weight: 700;
+  line-height: 24px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1600px) {
@@ -1000,11 +1007,11 @@ button:hover {
     height: 502px;
   }
   .skills-grid {
-    gap: 34px;
+    gap: 35px;
   }
   .skill-img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 7px;
   }
   .slider .list {

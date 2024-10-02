@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { submitFormData } from "../firebase/firestoreFunctions";
+// import { submitFormData } from "../firebase/firestoreFunctions";
 import CircularProgress from "@mui/material/CircularProgress";
 import { socials } from "../utils/data";
+import emailjs from "emailjs-com";
 
 const titleVariants = {
   initial: {
@@ -49,6 +50,10 @@ export default function Footer({ showPopUp }) {
     },
     email: {
       required: "Required",
+      pattern: {
+        value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+        message: "Invalid email address",
+      },
     },
     message: {
       required: "Required",
@@ -59,9 +64,32 @@ export default function Footer({ showPopUp }) {
     reset();
     console.log(formData);
     setLoading(true);
-    await submitFormData(formData);
-    setLoading(false);
-    showPopUp();
+    // await submitFormData(formData);
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    };
+    emailjs
+      .send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          console.log("Email sent successfully");
+          setLoading(false);
+          showPopUp();
+        },
+        (error) => {
+          console.log("Email send error:", error.text);
+          console.log("Service Id:", process.env.REACT_APP_EMAILJS_SERVICE_ID);
+          console.log("User Id:", process.env.REACT_APP_EMAILJS_USER_ID);
+        }
+      );
   };
 
   return (
@@ -129,8 +157,8 @@ export default function Footer({ showPopUp }) {
                 <CircularProgress
                   style={{
                     color: "#f4eee4",
-                    width: "15px",
-                    height: "15px",
+                    width: "20px",
+                    height: "20px",
                   }}
                 />
               ) : (
@@ -174,7 +202,7 @@ export default function Footer({ showPopUp }) {
         </div>
       </motion.div>
       <div className="footnote">
-        <p>
+        <p style={{ color: "#fd4659" }}>
           <em>Built by Onagaumah Emmanuel, 2024.</em>
         </p>
       </div>

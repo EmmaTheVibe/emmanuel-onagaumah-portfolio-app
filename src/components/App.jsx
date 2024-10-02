@@ -47,7 +47,7 @@ function App() {
     Transition: SlideTransition,
   });
 
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   setTimeout(() => {
     setShowJumper(false);
   }, 1700);
@@ -83,7 +83,7 @@ function App() {
       <div className="main" id={theme}>
         {showJumper ? (
           <div className="jump-container">
-            <Jumper />
+            <Jumper theme={theme} />
           </div>
         ) : (
           <div>
@@ -142,7 +142,7 @@ function App() {
                       theme={theme}
                       project={project}
                       direction={index % 2 !== 0 ? "reverse" : ""}
-                      key={project.id}
+                      key={index}
                     />
                   ))}
                 </ProjectsList>

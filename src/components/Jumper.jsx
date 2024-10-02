@@ -1,4 +1,4 @@
-export default function Jumper() {
+export default function Jumper({ theme }) {
   return (
     <span className="jumper-span">
       <svg
@@ -12,7 +12,7 @@ export default function Jumper() {
           strokeLinejoin="round"
           d="M47.5,94.3c0-23.5,19.9-42.5,44.5-42.5s44.5,19,44.5,42.5"
         />
-        <g stroke="#edd9be" strokeWidth="1">
+        <g stroke={theme === "light" ? "#edd9be" : "#0c0605"} strokeWidth="1">
           <ellipse
             className="circleL"
             fill="none"
