@@ -1,0 +1,11 @@
+# Block all web crawlers from accessing the /private/ directory
+User-agent: *
+Disallow: /private/
+
+# Allow Googlebot full access
+User-agent: Googlebot
+Disallow:
+
+# Block Bingbot from the /admin/ directory
+User-agent: Bingbot
+Disallow: /admin/
