@@ -9,3 +9,5 @@ Disallow:
 # Block Bingbot from the /admin/ directory
 User-agent: Bingbot
 Disallow: /admin/
+
+Sitemap: https://emmanuel-portfolio-six.vercel.app/sitemap.xml
