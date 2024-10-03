@@ -44,7 +44,7 @@ export default function DrawerTab({
                   >
                     <img
                       src={navLink.image}
-                      alt=""
+                      alt={navLink.name}
                       className="nav-img"
                       id={navLink.id}
                     />

@@ -448,16 +448,23 @@ const navLinks = [
 ];
 
 const socials = [
-  { image: "./images/github2.svg", link: "https://github.com/EmmaTheVibe" },
   {
+    name: "github",
+    image: "./images/github2.svg",
+    link: "https://github.com/EmmaTheVibe",
+  },
+  {
+    name: "twitter",
     image: "./images/twitter.svg",
     link: "https://x.com/shiemofr?s=21&t=rX9JrzoTa74OLT4KNPETFw",
   },
   {
+    name: "instagram",
     image: "./images/insta.svg",
     link: "https://www.instagram.com/thevibebtw?igsh=eDVtdnh3Y3V0NWd3&utm_source=qr",
   },
   {
+    name: "linkedin",
     image: "./images/linkedin.svg",
     link: "https://www.linkedin.com/in/emmanuel-onagaumah-44a969252/",
   },

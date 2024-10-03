@@ -80,82 +80,84 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="main" id={theme}>
+      <main className="main" id={theme}>
         {showJumper ? (
           <div className="jump-container">
             <Jumper theme={theme} />
           </div>
         ) : (
-          <div>
-            <img
-              src={togglers.hamburger}
-              alt=""
-              className="hamburger"
-              onClick={() => setOpenDrawer(true)}
-            />
-            <DrawerTab
-              openDrawer={openDrawer}
-              setOpenDrawer={setOpenDrawer}
-              toggleDrawer={toggleDrawer}
-              theme={theme}
-              toggleTheme={toggleTheme}
-            />
+          <article>
+            <div>
+              <img
+                src={togglers.hamburger}
+                alt="menu icon"
+                className="hamburger"
+                onClick={() => setOpenDrawer(true)}
+              />
+              <DrawerTab
+                openDrawer={openDrawer}
+                setOpenDrawer={setOpenDrawer}
+                toggleDrawer={toggleDrawer}
+                theme={theme}
+                toggleTheme={toggleTheme}
+              />
 
-            <Section className={"home-section"} sectionId={"home"}>
-              {clouds.map((cloud, index) => (
-                <img
-                  src={theme === "dark" ? cloud.dark : cloud.light}
-                  alt=""
-                  id={cloud.className}
-                  className="cloud"
-                  key={index}
-                />
-              ))}
-              <HomeContent toggleDarkMode={toggleTheme} />
+              <Section className={"home-section"} sectionId={"home"}>
+                {clouds.map((cloud, index) => (
+                  <img
+                    src={theme === "dark" ? cloud.dark : cloud.light}
+                    alt="cloud"
+                    id={cloud.className}
+                    className="cloud"
+                    key={index}
+                  />
+                ))}
+                <HomeContent toggleDarkMode={toggleTheme} />
 
-              <OpacityVector classname={"home-fill"} />
-            </Section>
-            <Section className={"skills-section"} sectionId={"skills"}>
-              <Skills theme={theme} />
-              <OpacityVector classname={"skills-fill"} />
-            </Section>
-            <Section
-              className={"project-section"}
-              sectionId={"projects"}
-              bg={projectsBg}
-            >
-              <div className="container">
-                <motion.h2
-                  variants={titleVariants}
-                  initial="initial"
-                  whileInView="animate"
-                  viewport={{ once: true }}
-                  className="section-title"
-                >
-                  Projects
-                </motion.h2>
-                <ProjectsList>
-                  {projectList.map((project, index) => (
-                    <ProjectItem
-                      mb={mb}
-                      mb2={mb2}
-                      theme={theme}
-                      project={project}
-                      direction={index % 2 !== 0 ? "reverse" : ""}
-                      key={index}
-                    />
-                  ))}
-                </ProjectsList>
-              </div>
-              <OpacityVector classname={"projects-fill"} />
-            </Section>
-            <Section className={"footer"} sectionId={"contact"}>
-              <Footer showPopUp={showPopUp} />
-            </Section>
-            <PopUp popUp={popUp} setPopUp={setPopUp} />
-          </div>
+                <OpacityVector classname={"home-fill"} />
+              </Section>
+              <Section className={"skills-section"} sectionId={"skills"}>
+                <Skills theme={theme} />
+                <OpacityVector classname={"skills-fill"} />
+              </Section>
+              <Section
+                className={"project-section"}
+                sectionId={"projects"}
+                bg={projectsBg}
+              >
+                <div className="container">
+                  <motion.h2
+                    variants={titleVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    className="section-title"
+                  >
+                    Projects
+                  </motion.h2>
+                  <ProjectsList>
+                    {projectList.map((project, index) => (
+                      <ProjectItem
+                        mb={mb}
+                        mb2={mb2}
+                        theme={theme}
+                        project={project}
+                        direction={index % 2 !== 0 ? "reverse" : ""}
+                        key={index}
+                      />
+                    ))}
+                  </ProjectsList>
+                </div>
+                <OpacityVector classname={"projects-fill"} />
+              </Section>
+              <Section className={"footer"} sectionId={"contact"}>
+                <Footer showPopUp={showPopUp} />
+              </Section>
+              <PopUp popUp={popUp} setPopUp={setPopUp} />
+            </div>
+          </article>
         )}
-      </div>
+      </main>
     </ThemeContext.Provider>
   );
 }

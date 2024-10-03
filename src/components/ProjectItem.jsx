@@ -46,17 +46,21 @@ export default function ProjectItem({ project, theme, mb, direction }) {
     >
       <div className={`screen ${direction}`}>
         <div className="project-pic">
-          <img src={project.pc} alt="" className="pc" />
-          <img src={tools.spanner} alt="" className="spanner" />
-          <img src={tools.spanner} alt="" className="spanner2" />
-          <img src={tools.gear} alt="" className="gear" />
-          <img src={tools.gear} alt="" className="gear2" />
+          <img
+            src={project.pc}
+            alt={`${project.name} pc view`}
+            className="pc"
+          />
+          <img src={tools.spanner} alt="spanner icon" className="spanner" />
+          <img src={tools.spanner} alt="spanner icon" className="spanner2" />
+          <img src={tools.gear} alt="gear icon" className="gear" />
+          <img src={tools.gear} alt="gear icon" className="gear2" />
           <motion.img
             variants={tabVariants}
             initial="initial"
             whileInView="animate"
             src={project.tab}
-            alt=""
+            alt={`${project.name} tab view`}
             className="tab"
           />
           <motion.img
@@ -64,7 +68,7 @@ export default function ProjectItem({ project, theme, mb, direction }) {
             initial="initial"
             whileInView="animate"
             src={project.mobile}
-            alt=""
+            alt={`${project.name} mobile view`}
             className="mobile"
           />
         </div>

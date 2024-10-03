@@ -193,7 +193,11 @@ export default function Footer({ showPopUp }) {
                     rel="noopener noreferrer"
                     key={index}
                   >
-                    <img src={social.image} alt="" className="soc"></img>
+                    <img
+                      src={social.image}
+                      alt={`${social.name} icon`}
+                      className="soc"
+                    ></img>
                   </a>
                 ))}
               </div>

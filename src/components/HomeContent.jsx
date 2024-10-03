@@ -20,7 +20,7 @@ export default function HomeContent({ toggleDarkMode }) {
           </h1>
           <h1 className="desc">a front-end web developer.</h1>
         </div>
-        <img src={desk} alt="" className="desk" />
+        <img src={desk} alt="desk" className="desk" />
       </motion.div>
     </div>
   );
