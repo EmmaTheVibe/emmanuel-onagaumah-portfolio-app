@@ -1,3 +1,5 @@
+Sitemap: https://emmanuel-portfolio-six.vercel.app/sitemap.xml
+
 # Block all web crawlers from accessing the /private/ directory
 User-agent: *
 Disallow: /private/
@@ -10,4 +12,3 @@ Disallow:
 User-agent: Bingbot
 Disallow: /admin/
 
-Sitemap: https://emmanuel-portfolio-six.vercel.app/sitemap.xml
