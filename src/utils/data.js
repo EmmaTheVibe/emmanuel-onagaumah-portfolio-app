@@ -368,42 +368,43 @@ const skillsList = [
     url: "./images/react.svg",
     // darkurl: "./images/react.svg",
   },
+  { id: 6, name: "NEXT JS", url: "./images/nextjs.svg" },
   {
-    id: 6,
+    id: 7,
     name: "SASS",
     url: "./images/sass.svg",
   },
   {
-    id: 7,
+    id: 8,
     name: "TAILWIND",
     url: "./images/tailwind.svg",
   },
   {
-    id: 8,
+    id: 9,
     name: "FRAMER",
     url: "./images/framer.svg",
   },
   {
-    id: 9,
+    id: 10,
     name: "GIT",
     url: "./images/git.svg",
   },
   {
-    id: 10,
+    id: 11,
     name: "FIREBASE",
     url: "./images/firebase.svg",
   },
   {
-    id: 11,
+    id: 12,
     name: "SUPABASE",
     url: "./images/supabase.svg",
   },
-  {
-    id: 12,
-    name: "TERMINAL",
-    url: "./images/terminal.svg",
-    // darkurl: "./images/terminal-darkmode.svg",
-  },
+  // {
+  //   id: 13,
+  //   name: "TERMINAL",
+  //   url: "./images/terminal.svg",
+  //   // darkurl: "./images/terminal-darkmode.svg",
+  // },
 
   { id: 13, name: "BOOTSTRAP", url: "./images/bootstrap.svg" },
   {
