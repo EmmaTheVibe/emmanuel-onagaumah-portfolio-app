@@ -86,6 +86,29 @@ const projectList = [
       },
     ],
   },
+  {
+    id: 8,
+    name: "IP Address Tracker",
+    link: "https://ip-address-tracker-sigma-two.vercel.app/",
+    pc: "./Mockups/ip-address-pc.png",
+    mobile: "./Mockups/ip-address-mobile.png",
+    tab: "./Mockups/ip-address-tab.png",
+    details: `This is a simple IP address tracker built using Next JS. This was a coding challenge and a cool way for me to practice using Next JS. I made use of ipify API and Leaflet JS for the tracking and map display respectively. Check it out below.`,
+    technologies: [
+      { id: 1, name: "NEXT JS", url: "./images/nextjs.svg" },
+      {
+        id: 2,
+        name: "CSS",
+        url: "./images/css.svg",
+      },
+      {
+        id: 3,
+        name: "RESTFUL APIs",
+        url: "./images/api.svg",
+        // darkurl: "./images/api-darkmode.svg",
+      },
+    ],
+  },
 
   {
     id: 2,
@@ -257,34 +280,34 @@ const projectList = [
     ],
   },
 
-  {
-    id: 8,
-    name: "Advice generator",
-    link: "https://advice-generator-app-ten-tawny.vercel.app/",
-    pc: "./Mockups/advice-pc.png",
-    mobile: "./Mockups/advice-mobile.png",
-    tab: "./Mockups/advice-tab.png",
-    details: `Why ask your friends for advice when this site I built at 2am on a random Thursday night is here for you? This was an online coding challenge. I used axios for the API fetching.`,
-    technologies: [
-      {
-        id: 1,
-        name: "REACT",
-        url: "./images/react.svg",
-        // darkurl: "./images/react.svg",
-      },
-      {
-        id: 2,
-        name: "CSS",
-        url: "./images/css.svg",
-      },
-      {
-        id: 3,
-        name: "RESTFUL APIs",
-        url: "./images/api.svg",
-        // darkurl: "./images/api-darkmode.svg",
-      },
-    ],
-  },
+  // {
+  //   id: 8,
+  //   name: "Advice generator",
+  //   link: "https://advice-generator-app-ten-tawny.vercel.app/",
+  //   pc: "./Mockups/advice-pc.png",
+  //   mobile: "./Mockups/advice-mobile.png",
+  //   tab: "./Mockups/advice-tab.png",
+  //   details: `Why ask your friends for advice when this site I built at 2am on a random Thursday night is here for you? This was an online coding challenge. I used axios for the API fetching.`,
+  //   technologies: [
+  //     {
+  //       id: 1,
+  //       name: "REACT",
+  //       url: "./images/react.svg",
+  //       // darkurl: "./images/react.svg",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "CSS",
+  //       url: "./images/css.svg",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "RESTFUL APIs",
+  //       url: "./images/api.svg",
+  //       // darkurl: "./images/api-darkmode.svg",
+  //     },
+  //   ],
+  // },
 
   {
     id: 9,
