@@ -350,6 +350,9 @@ section {
 @keyframes cloud1 {
   0% {
     transform: translateX(0%);
+    opacity: 0.1;
+  }
+  50% {
     opacity: 0.5;
   }
   100% {
