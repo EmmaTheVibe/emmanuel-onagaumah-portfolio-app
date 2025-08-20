@@ -21,15 +21,18 @@ html.light {
   background: #f4eee4;
   background-color: #f4eee4;
   min-height: 100%;
+  // border: 3px solid red;
 }
 
 html.dark {
   background: #331914;
   background-color: #331914;
   min-height: 100%;
+  // border: 3px solid green;
 }
 body {
   font-family: "Comfortaa", sans-serif;
+  background: transparent;
 }
 
 #dark {
