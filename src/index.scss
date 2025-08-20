@@ -17,22 +17,45 @@ $quantity: 15;
   margin: 0;
   padding: 0;
 }
+
+html {
+  min-height: 100%;
+}
+
+/* Light / Dark theme variations */
 html.light {
   background: #f4eee4;
   background-color: #f4eee4;
-  min-height: 100%;
-  // border: 3px solid red;
 }
 
 html.dark {
   background: #331914;
   background-color: #331914;
-  min-height: 100%;
-  // border: 3px solid green;
 }
+
 body {
   font-family: "Comfortaa", sans-serif;
   background: transparent;
+  min-height: 100vh;
+}
+
+:root {
+  background-color: #f4eee4;
+}
+
+html.light {
+  background-color: #f4eee4;
+}
+
+html.dark {
+  background-color: #331914;
+}
+
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 #dark {
