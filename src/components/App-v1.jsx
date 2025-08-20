@@ -1,52 +1,34 @@
-"use client";
-import { useState, createContext, useEffect } from "react";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import Slide from "@mui/material/Slide";
-
-// your imports...
-import { projectList, projectsBg, togglers, clouds } from "../utils/data";
+import { useState, createContext } from "react";
+import { projectList } from "../utils/data";
+import { projectsBg } from "../utils/data";
 import Section from "./Section";
 import ProjectsList from "./ProjectsList";
 import ProjectItem from "./ProjectItem";
 import Jumper from "./Jumper";
 import Skills from "./Skills";
 import HomeContent from "./HomeContent";
+import { motion } from "framer-motion";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import OpacityVector from "./OpacityVector";
 import Footer from "./Footer";
 import PopUp from "./PopUp";
+import Slide from "@mui/material/Slide";
 import DrawerTab from "./DrawerTab";
+import { togglers } from "../utils/data";
+import { clouds } from "../utils/data";
 
 function SlideTransition(props) {
   return <Slide {...props} direction="up" />;
 }
 
 export const ThemeContext = createContext(null);
-
 function App() {
   const mb = useMediaQuery("(max-width: 980px)");
   const mb2 = useMediaQuery("(max-width: 720px)");
 
   const [showJumper, setShowJumper] = useState(true);
+
   const [openDrawer, setOpenDrawer] = useState(false);
-  const [theme, setTheme] = useState("dark");
-
-  const [popUp, setPopUp] = useState({
-    open: false,
-    Transition: SlideTransition,
-  });
-
-  // ⬇️ Sync theme state with <html> class
-  useEffect(() => {
-    const html = document.documentElement;
-    html.classList.remove("light", "dark");
-    html.classList.add(theme);
-  }, [theme]);
-
-  // hide jumper after 1.7s
-  useEffect(() => {
-    const timer = setTimeout(() => setShowJumper(false), 1700);
-    return () => clearTimeout(timer);
-  }, []);
 
   const toggleDrawer = (event) => {
     if (
@@ -56,11 +38,37 @@ function App() {
     ) {
       return;
     }
+
     setOpenDrawer(!openDrawer);
   };
 
+  const [popUp, setPopUp] = useState({
+    open: false,
+    Transition: SlideTransition,
+  });
+
+  const [theme, setTheme] = useState("dark");
+  setTimeout(() => {
+    setShowJumper(false);
+  }, 1700);
+
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
+
+  const titleVariants = {
+    initial: {
+      opacity: 0,
+      x: -100,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.3,
+        delay: 0.2,
+      },
+    },
   };
 
   const showPopUp = () => {
@@ -108,19 +116,25 @@ function App() {
 
                 <OpacityVector classname={"home-fill"} />
               </Section>
-
               <Section className={"skills-section"} sectionId={"skills"}>
                 <Skills theme={theme} />
                 <OpacityVector classname={"skills-fill"} />
               </Section>
-
               <Section
                 className={"project-section"}
                 sectionId={"projects"}
                 bg={projectsBg}
               >
                 <div className="container">
-                  <h2 className="section-title">Projects</h2>
+                  <motion.h2
+                    variants={titleVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    className="section-title"
+                  >
+                    Projects
+                  </motion.h2>
                   <ProjectsList>
                     {projectList.map((project, index) => (
                       <ProjectItem
@@ -136,11 +150,9 @@ function App() {
                 </div>
                 <OpacityVector classname={"projects-fill"} />
               </Section>
-
               <Section className={"footer"} sectionId={"contact"}>
                 <Footer showPopUp={showPopUp} />
               </Section>
-
               <PopUp popUp={popUp} setPopUp={setPopUp} />
             </div>
           </article>

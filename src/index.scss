@@ -17,6 +17,17 @@ $quantity: 15;
   margin: 0;
   padding: 0;
 }
+html.light {
+  background: #f4eee4;
+  background-color: #f4eee4;
+  min-height: 100%;
+}
+
+html.dark {
+  background: #331914;
+  background-color: #331914;
+  min-height: 100%;
+}
 body {
   font-family: "Comfortaa", sans-serif;
 }
