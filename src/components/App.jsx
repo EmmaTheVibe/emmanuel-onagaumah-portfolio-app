@@ -1,20 +1,21 @@
-"use client";
 import { useState, createContext, useEffect } from "react";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import Slide from "@mui/material/Slide";
-
-// your imports...
-import { projectList, projectsBg, togglers, clouds } from "../utils/data";
+import { projectList } from "../utils/data";
+import { projectsBg } from "../utils/data";
 import Section from "./Section";
 import ProjectsList from "./ProjectsList";
 import ProjectItem from "./ProjectItem";
 import Jumper from "./Jumper";
 import Skills from "./Skills";
 import HomeContent from "./HomeContent";
+import { motion } from "framer-motion";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import OpacityVector from "./OpacityVector";
 import Footer from "./Footer";
 import PopUp from "./PopUp";
+import Slide from "@mui/material/Slide";
 import DrawerTab from "./DrawerTab";
+import { togglers } from "../utils/data";
+import { clouds } from "../utils/data";
 
 function SlideTransition(props) {
   return <Slide {...props} direction="up" />;
@@ -22,31 +23,26 @@ function SlideTransition(props) {
 
 export const ThemeContext = createContext(null);
 
+function ThemeMetaUpdater({ theme }) {
+  useEffect(() => {
+    let meta = document.querySelector('meta[name="theme-color"]');
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.name = "theme-color";
+      document.head.appendChild(meta);
+    }
+    meta.content = theme === "dark" ? "#331914" : "#f4eee4";
+  }, [theme]);
+
+  return null;
+}
+
 function App() {
   const mb = useMediaQuery("(max-width: 980px)");
   const mb2 = useMediaQuery("(max-width: 720px)");
 
   const [showJumper, setShowJumper] = useState(true);
   const [openDrawer, setOpenDrawer] = useState(false);
-  const [theme, setTheme] = useState("dark");
-
-  const [popUp, setPopUp] = useState({
-    open: false,
-    Transition: SlideTransition,
-  });
-
-  // ⬇️ Sync theme state with <html> class
-  useEffect(() => {
-    const html = document.documentElement;
-    html.classList.remove("light", "dark");
-    html.classList.add(theme);
-  }, [theme]);
-
-  // hide jumper after 1.7s
-  useEffect(() => {
-    const timer = setTimeout(() => setShowJumper(false), 1700);
-    return () => clearTimeout(timer);
-  }, []);
 
   const toggleDrawer = (event) => {
     if (
@@ -59,8 +55,28 @@ function App() {
     setOpenDrawer(!openDrawer);
   };
 
+  const [popUp, setPopUp] = useState({
+    open: false,
+    Transition: SlideTransition,
+  });
+
+  const [theme, setTheme] = useState("dark");
+
+  setTimeout(() => {
+    setShowJumper(false);
+  }, 1700);
+
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
+
+  const titleVariants = {
+    initial: { opacity: 0, x: -100 },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.3, delay: 0.2 },
+    },
   };
 
   const showPopUp = () => {
@@ -72,6 +88,8 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <ThemeMetaUpdater theme={theme} />
+
       <main className="main" id={theme}>
         {showJumper ? (
           <div className="jump-container">
@@ -105,7 +123,6 @@ function App() {
                   />
                 ))}
                 <HomeContent toggleDarkMode={toggleTheme} />
-
                 <OpacityVector classname={"home-fill"} />
               </Section>
 
@@ -120,7 +137,15 @@ function App() {
                 bg={projectsBg}
               >
                 <div className="container">
-                  <h2 className="section-title">Projects</h2>
+                  <motion.h2
+                    variants={titleVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    className="section-title"
+                  >
+                    Projects
+                  </motion.h2>
                   <ProjectsList>
                     {projectList.map((project, index) => (
                       <ProjectItem
