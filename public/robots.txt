@@ -1,4 +1,4 @@
-Sitemap: https://emmanuel-portfolio-six.vercel.app/sitemap.xml
+Sitemap: https://www.shiemo.dev/sitemap.xml
 
 # Block all web crawlers from accessing the /private/ directory
 User-agent: *
