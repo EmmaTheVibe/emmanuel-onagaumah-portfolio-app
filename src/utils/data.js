@@ -60,6 +60,29 @@ const projectList = [
   },
 
   {
+    id: 6,
+    name: "Weather Now",
+    link: "https://weather-now-seven-kohl.vercel.app/",
+    pc: "./Mockups/weather-now-pc.png",
+    mobile: "./Mockups/weather-now-mobile.png",
+    tab: "./Mockups/weather-now-tab.png",
+    details: `This is a responsive weather application built with NextJS. Uses Open-Meteo API for accurate weather forecasts and BigDataCloud for location services. Features include auto geolocation, city search with autocomplete, customizable unit preferences, 7-day forecasts, and hourly breakdowns.`,
+    technologies: [
+      { id: 1, name: "NEXT JS", url: "./images/nextjs.svg" },
+      {
+        id: 2,
+        name: "CSS",
+        url: "./images/css.svg",
+      },
+      {
+        id: 3,
+        name: "RESTFUL APIs",
+        url: "./images/api.svg",
+      },
+    ],
+  },
+
+  {
     id: 4,
     name: "Loopstudios landing page",
     link: "https://loopstudios-landing-page-one-ruby.vercel.app/",
@@ -228,34 +251,34 @@ const projectList = [
     ],
   },
 
-  {
-    id: 6,
-    name: " Product order page",
-    link: "https://emmathevibe.github.io/product-list-main/",
-    pc: "./Mockups/product-list-pc.png",
-    mobile: "./Mockups/product-list-mobile.png",
-    tab: "./Mockups/product-list-tab.png",
-    details: `Order up! This is another practice e-commerce page with lots of products to choose from. It includes a real-time cart update feature as well as a receipt after order confirmation.`,
-    technologies: [
-      {
-        id: 1,
-        name: "REACT",
-        url: "./images/react.svg",
-        // darkurl: "./images/react.svg",
-      },
-      {
-        id: 2,
-        name: "TERMINAL",
-        url: "./images/terminal.svg",
-        // darkurl: "./images/terminal-darkmode.svg",
-      },
-      {
-        id: 3,
-        name: "CSS",
-        url: "./images/css.svg",
-      },
-    ],
-  },
+  // {
+  //   id: 6,
+  //   name: " Product order page",
+  //   link: "https://emmathevibe.github.io/product-list-main/",
+  //   pc: "./Mockups/product-list-pc.png",
+  //   mobile: "./Mockups/product-list-mobile.png",
+  //   tab: "./Mockups/product-list-tab.png",
+  //   details: `Order up! This is another practice e-commerce page with lots of products to choose from. It includes a real-time cart update feature as well as a receipt after order confirmation.`,
+  //   technologies: [
+  //     {
+  //       id: 1,
+  //       name: "REACT",
+  //       url: "./images/react.svg",
+  //       // darkurl: "./images/react.svg",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "TERMINAL",
+  //       url: "./images/terminal.svg",
+  //       // darkurl: "./images/terminal-darkmode.svg",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "CSS",
+  //       url: "./images/css.svg",
+  //     },
+  //   ],
+  // },
 
   {
     id: 7,
