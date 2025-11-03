@@ -32,6 +32,28 @@ const projectList = [
     ],
   },
   {
+    id: 6,
+    name: "Travel Agency Landing Page",
+    link: "https://jadootravel-alpha.vercel.app/",
+    pc: "./Mockups/jadoo-pc.png",
+    mobile: "./Mockups/jadoo-mobile.png",
+    tab: "./Mockups/jadoo-tab.png",
+    details: `This is a demo landing page for a travel agency built with NextJS. This website contains cool UI components such as animated card stacks and carousels. All animations were done with Framer motion. This website is fully responsive on all devices.`,
+    technologies: [
+      { id: 1, name: "NEXT JS", url: "./images/nextjs.svg" },
+      {
+        id: 2,
+        name: "CSS",
+        url: "./images/css.svg",
+      },
+      {
+        id: 3,
+        name: "FRAMER",
+        url: "./images/framer.svg",
+      },
+    ],
+  },
+  {
     id: 0,
     name: "Parkway wallet website",
     link: "https://wallet.parkway.ng/",
@@ -222,34 +244,34 @@ const projectList = [
     ],
   },
 
-  {
-    id: 5,
-    name: "eCommerce product page",
-    link: "https://ecommerce-product-page-puce-five.vercel.app/",
-    pc: "./Mockups/ecommerce-pc.png",
-    mobile: "./Mockups/ecommerce-mobile.png",
-    tab: "./Mockups/ecommerce-tab.png",
-    details: `This is a practice e-commerce page for a single item. There's a carousel with various images of the item and a check-out cart. The side menu on smaller screens and modal on larger screens are Material UI components.`,
-    technologies: [
-      {
-        id: 1,
-        name: "REACT",
-        url: "./images/react.svg",
-        // darkurl: "./images/react.svg",
-      },
-      {
-        id: 2,
-        name: "CSS",
-        url: "./images/css.svg",
-      },
-      {
-        id: 3,
-        name: "TERMINAL",
-        url: "./images/terminal.svg",
-        // darkurl: "./images/terminal-darkmode.svg",
-      },
-    ],
-  },
+  // {
+  //   id: 5,
+  //   name: "eCommerce product page",
+  //   link: "https://ecommerce-product-page-puce-five.vercel.app/",
+  //   pc: "./Mockups/ecommerce-pc.png",
+  //   mobile: "./Mockups/ecommerce-mobile.png",
+  //   tab: "./Mockups/ecommerce-tab.png",
+  //   details: `This is a practice e-commerce page for a single item. There's a carousel with various images of the item and a check-out cart. The side menu on smaller screens and modal on larger screens are Material UI components.`,
+  //   technologies: [
+  //     {
+  //       id: 1,
+  //       name: "REACT",
+  //       url: "./images/react.svg",
+  //       // darkurl: "./images/react.svg",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "CSS",
+  //       url: "./images/css.svg",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "TERMINAL",
+  //       url: "./images/terminal.svg",
+  //       // darkurl: "./images/terminal-darkmode.svg",
+  //     },
+  //   ],
+  // },
 
   // {
   //   id: 6,
