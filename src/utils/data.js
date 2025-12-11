@@ -1,37 +1,5 @@
 const projectList = [
   {
-    id: 0,
-    name: "EdenPro",
-    link: "https://www.edenprong.com/",
-    pc: "./Mockups/eden-pro-pc.png",
-    mobile: "./Mockups/eden-pro-mobile.png",
-    tab: "./Mockups/eden-pro-tab.png",
-    details: `I built the landing page for EdenPro, a business solutions company that optimizes key areas such as sales, invoicing, organizational structure, training, automation, and branding by developing products and solutions tailored to client needs. The website is easy to navigate and responsive on all devices.`,
-    technologies: [
-      {
-        id: 1,
-        name: "REACT",
-        url: "./images/react.svg",
-        // darkurl: "./images/react.svg",
-      },
-      {
-        id: 2,
-        name: "CSS",
-        url: "./images/css.svg",
-      },
-      {
-        id: 3,
-        name: "FIREBASE",
-        url: "./images/firebase.svg",
-      },
-      {
-        id: 4,
-        name: "FRAMER",
-        url: "./images/framer.svg",
-      },
-    ],
-  },
-  {
     id: 6,
     name: "Travel Agency Landing Page",
     link: "https://jadootravel-alpha.vercel.app/",
@@ -100,6 +68,38 @@ const projectList = [
         id: 3,
         name: "RESTFUL APIs",
         url: "./images/api.svg",
+      },
+    ],
+  },
+  {
+    id: 0,
+    name: "EdenPro",
+    link: "https://www.edenprong.com/",
+    pc: "./Mockups/eden-pro-pc.png",
+    mobile: "./Mockups/eden-pro-mobile.png",
+    tab: "./Mockups/eden-pro-tab.png",
+    details: `I built the landing page for EdenPro, a business solutions company that optimizes key areas such as sales, invoicing, organizational structure, training, automation, and branding by developing products and solutions tailored to client needs. The website is easy to navigate and responsive on all devices.`,
+    technologies: [
+      {
+        id: 1,
+        name: "REACT",
+        url: "./images/react.svg",
+        // darkurl: "./images/react.svg",
+      },
+      {
+        id: 2,
+        name: "CSS",
+        url: "./images/css.svg",
+      },
+      {
+        id: 3,
+        name: "FIREBASE",
+        url: "./images/firebase.svg",
+      },
+      {
+        id: 4,
+        name: "FRAMER",
+        url: "./images/framer.svg",
       },
     ],
   },
