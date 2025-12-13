@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { desk } from "../utils/data";
+import Avatar from "./Avatar";
 export default function HomeContent({ toggleDarkMode }) {
   const divRef = useRef(null);
 
@@ -20,7 +21,8 @@ export default function HomeContent({ toggleDarkMode }) {
           </h1>
           <h1 className="desc">a front-end web developer.</h1>
         </div>
-        <img src={desk} alt="desk" className="desk" />
+        {/* <img src={desk} alt="desk" className="desk" /> */}
+        <Avatar />
       </motion.div>
     </div>
   );

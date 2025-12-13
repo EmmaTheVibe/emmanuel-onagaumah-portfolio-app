@@ -568,6 +568,7 @@ const clouds = [
 ];
 
 const desk = "./images/desk.svg";
+const pfp = "./images/pfp2.webp";
 
 export {
   projectsBg,
@@ -579,4 +580,5 @@ export {
   socials,
   clouds,
   desk,
+  pfp,
 };
